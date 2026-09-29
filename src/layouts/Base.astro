@@ -1,0 +1,76 @@
+---
+import '@fontsource/fraunces/latin-500.css';
+import '@fontsource/fraunces/latin-600.css';
+import '@fontsource/fraunces/latin-600-italic.css';
+import '@fontsource/source-sans-3/latin-400.css';
+import '@fontsource/source-sans-3/latin-600.css';
+import '@fontsource/source-sans-3/latin-700.css';
+import '../styles/global.css';
+import { siteUrl } from '../lib/url.js';
+import course from '../data/course.json';
+
+const { title, description = course.tagline, current = '' } = Astro.props;
+const pdf = siteUrl('/Two-Year-Indonesian-Plan.pdf');
+const path = Astro.url.pathname;
+
+function isCurrent(href) {
+  const target = siteUrl(href);
+  return path === target || path === target.replace(/\/$/, '');
+}
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={siteUrl('/favicon.svg')} type="image/svg+xml" />
+    <meta name="theme-color" content="#16343f" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href={siteUrl('/')}>
+          <strong>Belajar Indonesia</strong>
+          <span>Two-year course</span>
+        </a>
+        <nav aria-label="Primary">
+          <div class="nav-links">
+            <a href={siteUrl('/')} aria-current={isCurrent('/') ? 'page' : undefined}>Home</a>
+            <a href={siteUrl('/vocabulary/')} aria-current={current === 'vocabulary' ? 'page' : undefined}>Vocabulary</a>
+            <a href={siteUrl('/flashcards/')} aria-current={current === 'flashcards' ? 'page' : undefined}>Flashcards</a>
+            <a href={siteUrl('/assessment/')} aria-current={current === 'assessment' ? 'page' : undefined}>Assessment</a>
+            <a href={siteUrl('/resources/')} aria-current={current === 'resources' ? 'page' : undefined}>Resources</a>
+            <a href={siteUrl('/appendices/')} aria-current={current === 'appendices' ? 'page' : undefined}>Appendices</a>
+            <details class="terms-menu">
+              <summary>Terms</summary>
+              <div class="term-links">
+                {
+                  course.termMeta.map((term) => (
+                    <a href={siteUrl(`/term/${term.n}/`)}>
+                      Term {term.n}: {term.title}
+                    </a>
+                  ))
+                }
+              </div>
+            </details>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          {course.dated}. {course.vocabTotal.toLocaleString('en-GB')} listed words and phrases.
+          <a href={pdf}>Download the course plan (PDF)</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+---
+const { items, filterable = false } = Astro.props;
+
+function searchText(item) {
+  return [item.indonesian, item.english, item.root, item.standard, item.colloquialVariant, item.theme]
+    .filter(Boolean)
+    .join(' ');
+}
+---
+
+<div class="table-scroll" tabindex="0" role="region" aria-label="Vocabulary">
+  <table class="vocab-table">
+    <thead>
+      <tr>
+        <th scope="col">Indonesian</th>
+        <th scope="col">English</th>
+        <th scope="col">Root</th>
+        <th scope="col">Standard form</th>
+        {filterable && <th scope="col">Theme</th>}
+        {filterable && <th scope="col">Term</th>}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        items.map((item) => (
+          <tr
+            data-vocab-row={filterable ? '' : undefined}
+            data-id={item.id}
+            data-term={item.term}
+            data-theme={item.theme}
+            data-colloquial={String(item.colloquial)}
+            data-slang={String(item.slang)}
+            data-indonesian={item.indonesian}
+            data-english={item.english}
+            data-root={item.root || ''}
+            data-standard={item.standard || ''}
+            data-variant={item.colloquialVariant || ''}
+            data-search={searchText(item)}
+          >
+            <td lang="id">
+              {item.indonesian}
+              {item.colloquial && !item.colloquialVariant && <span class="badge">Colloquial</span>}
+              {item.colloquialVariant && (
+                <span class="badge">Colloquial form: {item.colloquialVariant}</span>
+              )}
+              {item.slang && <span class="badge slang">Slang</span>}
+            </td>
+            <td>{item.english}</td>
+            <td lang="id">
+              {item.root || <span aria-hidden="true">—</span>}
+              {!item.root && <span class="visually-hidden">None</span>}
+            </td>
+            <td lang="id">
+              {item.standard || <span aria-hidden="true">—</span>}
+              {!item.standard && <span class="visually-hidden">None</span>}
+            </td>
+            {filterable && <td>{item.theme}</td>}
+            {filterable && <td>{item.term}</td>}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

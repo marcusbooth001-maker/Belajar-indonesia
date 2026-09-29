@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import course from '../data/course.json';
+---
+
+<Base title="Appendices · Belajar Indonesia" current="appendices">
+  <article class="page">
+    <h1>Appendices</h1>
+    <p>Register, colloquial Jakarta features, and the affix reference from the course plan.</p>
+    <Blocks blocks={course.appendices} />
+  </article>
+</Base>

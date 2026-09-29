@@ -1,0 +1,368 @@
+---
+import Base from '../layouts/Base.astro';
+import { siteUrl } from '../lib/url.js';
+import course from '../data/course.json';
+---
+
+<Base title="Flashcards · Belajar Indonesia" current="flashcards" description="Practise course vocabulary with flashcards saved in this browser.">
+  <article class="page">
+    <h1>Flashcards</h1>
+    <p>
+      Choose a term and a theme, then flip each card. Mark a card known or unknown. Progress is saved in this browser only.
+      The full lists are on the <a href={siteUrl('/vocabulary/')}>vocabulary page</a>.
+    </p>
+    <noscript>
+      <p class="noscript">Flashcards need JavaScript. You can still read every item on the vocabulary page.</p>
+    </noscript>
+    <div class="study-layout">
+      <form id="deck-controls" class="study-controls">
+        <label>
+          Term
+          <select id="deck-term" name="term">
+            <option value="all">All terms</option>
+            {course.termMeta.map((term) => <option value={term.n}>Term {term.n}: {term.title}</option>)}
+          </select>
+        </label>
+        <label>
+          Theme
+          <select id="deck-theme" name="theme">
+            <option value="all">All themes</option>
+          </select>
+        </label>
+        <label>
+          Direction
+          <select id="deck-direction" name="dir">
+            <option value="id">Indonesian to English</option>
+            <option value="en">English to Indonesian</option>
+          </select>
+        </label>
+        <label>
+          Which cards
+          <select id="deck-pool" name="pool">
+            <option value="all">All cards</option>
+            <option value="remaining">Not yet known</option>
+            <option value="unknown">Unknown</option>
+            <option value="known">Known</option>
+          </select>
+        </label>
+        <label>
+          <span>Order</span>
+          <span class="keys"><input id="deck-shuffle" type="checkbox" /> Shuffle</span>
+        </label>
+        <button type="button" class="secondary" id="shuffle-again" hidden>Shuffle again</button>
+        <button type="button" class="ghost" id="reset-progress">Reset progress</button>
+        <p class="keys" id="reset-note" hidden>This clears known and unknown marks stored on this device.</p>
+      </form>
+
+      <div>
+        <div class="progress-wrap">
+          <div
+            id="deck-bar"
+            class="bar"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="1"
+            aria-valuenow="0"
+            aria-label="Known cards in this deck"
+          >
+            <span id="bar-known" class="bar-known"></span>
+            <span id="bar-unknown" class="bar-unknown"></span>
+          </div>
+          <p id="deck-progress" aria-live="polite">Loading cards…</p>
+        </div>
+
+        <article class="study-card" id="study-card">
+          <p class="eyebrow" id="card-kicker">Term</p>
+          <p class="study-word" id="card-prompt"></p>
+          <div id="card-badges"></div>
+          <p class="study-answer" id="card-answer" hidden></p>
+          <p class="study-extra" id="card-extra" hidden></p>
+          <div class="study-actions">
+            <button type="button" id="flip">Show answer</button>
+            <button type="button" class="secondary" id="mark-known" hidden>Known</button>
+            <button type="button" class="ghost" id="mark-unknown" hidden>Unknown</button>
+          </div>
+        </article>
+        <div class="study-nav">
+          <button type="button" class="secondary" id="prev">Previous</button>
+          <span id="card-position">Card 0 of 0</span>
+          <button type="button" class="secondary" id="next">Next</button>
+        </div>
+        <p class="keys">Keyboard: F flips the card, K marks known, U marks unknown, and the arrow keys move through the deck.</p>
+      </div>
+    </div>
+  </article>
+
+<script>
+  import vocab from '../data/vocab.json';
+  import { filterDeck, promptEnglish, shuffleItems, summarise } from '../lib/deck.js';
+
+  const STORAGE_KEY = 'belajar-indonesia.progress.v1';
+  const termSelect = document.querySelector('#deck-term');
+  const themeSelect = document.querySelector('#deck-theme');
+  const directionSelect = document.querySelector('#deck-direction');
+  const poolSelect = document.querySelector('#deck-pool');
+  const shuffleBox = document.querySelector('#deck-shuffle');
+  const shuffleAgain = document.querySelector('#shuffle-again');
+  const resetButton = document.querySelector('#reset-progress');
+  const resetNote = document.querySelector('#reset-note');
+  const progressText = document.querySelector('#deck-progress');
+  const bar = document.querySelector('#deck-bar');
+  const barKnown = document.querySelector('#bar-known');
+  const barUnknown = document.querySelector('#bar-unknown');
+  const kicker = document.querySelector('#card-kicker');
+  const prompt = document.querySelector('#card-prompt');
+  const badges = document.querySelector('#card-badges');
+  const answer = document.querySelector('#card-answer');
+  const extra = document.querySelector('#card-extra');
+  const flipButton = document.querySelector('#flip');
+  const knownButton = document.querySelector('#mark-known');
+  const unknownButton = document.querySelector('#mark-unknown');
+  const prevButton = document.querySelector('#prev');
+  const nextButton = document.querySelector('#next');
+  const position = document.querySelector('#card-position');
+
+  const themes = [];
+  const seen = new Set();
+  for (const item of vocab) {
+    const key = `${item.term}::${item.theme}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    themes.push({ term: item.term, theme: item.theme });
+  }
+
+  let progress = loadProgress();
+  let index = 0;
+  let flipped = false;
+  let shuffledIds = null;
+  let resetArmed = false;
+
+  function loadProgress() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      return stored && typeof stored === 'object' ? stored : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function saveProgress() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+  }
+
+  function fillThemes() {
+    const term = termSelect.value;
+    const current = themeSelect.value;
+    const available = themes.filter((theme) => term === 'all' || String(theme.term) === String(term));
+    themeSelect.replaceChildren(new Option('All themes', 'all'));
+    for (const theme of available) themeSelect.append(new Option(theme.theme, theme.theme));
+    themeSelect.value = [...themeSelect.options].some((option) => option.value === current) ? current : 'all';
+  }
+
+  function currentDeck() {
+    const filtered = filterDeck(vocab, {
+      term: termSelect.value,
+      theme: themeSelect.value,
+      pool: poolSelect.value,
+      progress,
+    });
+    if (!shuffleBox.checked) return filtered;
+    if (!shuffledIds) shuffledIds = shuffleItems(filtered).map((item) => item.id);
+    const byId = new Map(filtered.map((item) => [item.id, item]));
+    return shuffledIds.map((id) => byId.get(id)).filter(Boolean);
+  }
+
+  function setFlipped(next) {
+    flipped = next;
+    answer.hidden = !flipped;
+    extra.hidden = !flipped;
+    knownButton.hidden = !flipped;
+    unknownButton.hidden = !flipped;
+    flipButton.textContent = flipped ? 'Hide answer' : 'Show answer';
+  }
+
+  function render() {
+    const deck = currentDeck();
+    const stats = summarise(
+      filterDeck(vocab, { term: termSelect.value, theme: themeSelect.value, pool: 'all', progress }),
+      progress,
+    );
+    if (index >= deck.length) index = Math.max(0, deck.length - 1);
+    if (index < 0) index = 0;
+    const item = deck[index];
+    const direction = directionSelect.value;
+    progressText.textContent = `Known ${stats.known.toLocaleString('en-GB')} · Unknown ${stats.unknown.toLocaleString('en-GB')} · Unseen ${stats.unseen.toLocaleString('en-GB')} · Deck ${deck.length.toLocaleString('en-GB')}`;
+    bar.setAttribute('aria-valuemax', String(Math.max(stats.total, 1)));
+    bar.setAttribute('aria-valuenow', String(stats.known));
+    bar.setAttribute('aria-label', `Known ${stats.known} of ${stats.total} cards in this deck`);
+    const knownWidth = stats.total ? (stats.known / stats.total) * 100 : 0;
+    const unknownWidth = stats.total ? (stats.unknown / stats.total) * 100 : 0;
+    barKnown.style.width = `${knownWidth}%`;
+    barUnknown.style.width = `${unknownWidth}%`;
+    shuffleAgain.hidden = !shuffleBox.checked;
+
+    if (!item) {
+      kicker.textContent = 'Deck';
+      prompt.textContent = 'No cards match these filters.';
+      prompt.lang = 'en-GB';
+      badges.replaceChildren();
+      answer.hidden = true;
+      extra.hidden = true;
+      flipButton.hidden = true;
+      knownButton.hidden = true;
+      unknownButton.hidden = true;
+      position.textContent = 'Card 0 of 0';
+      prevButton.disabled = true;
+      nextButton.disabled = true;
+      return;
+    }
+
+    flipButton.hidden = false;
+    const showIndonesianFirst = direction === 'id';
+    kicker.textContent = `Term ${item.term} · ${item.theme}`;
+    prompt.textContent = showIndonesianFirst ? item.indonesian : promptEnglish(item.english);
+    prompt.lang = showIndonesianFirst ? 'id' : 'en-GB';
+    answer.textContent = showIndonesianFirst ? item.english : item.indonesian;
+    answer.lang = showIndonesianFirst ? 'en-GB' : 'id';
+    const notes = [];
+    if (item.root) notes.push(`Root: ${item.root}`);
+    if (item.standard) notes.push(`Standard form: ${item.standard}`);
+    if (item.colloquialVariant) notes.push(`Colloquial form: ${item.colloquialVariant}`);
+    if (!showIndonesianFirst) notes.push(`Full gloss: ${item.english}`);
+    extra.textContent = notes.join(' · ');
+    badges.replaceChildren();
+    if (item.colloquial && !item.colloquialVariant) badges.append(badge('Colloquial', 'badge'));
+    if (item.slang) badges.append(badge('Slang', 'badge slang'));
+    const mark = progress[item.id];
+    if (mark === 'known') badges.append(badge('Marked known', 'badge'));
+    if (mark === 'unknown') badges.append(badge('Marked unknown', 'badge slang'));
+    setFlipped(flipped);
+    if (!notes.length) extra.hidden = true;
+    position.textContent = `Card ${(index + 1).toLocaleString('en-GB')} of ${deck.length.toLocaleString('en-GB')}`;
+    prevButton.disabled = index === 0;
+    nextButton.disabled = index >= deck.length - 1;
+  }
+
+  function badge(text, className) {
+    const node = document.createElement('span');
+    node.className = className;
+    node.textContent = text;
+    return node;
+  }
+
+  function writeUrl() {
+    const params = new URLSearchParams();
+    if (termSelect.value !== 'all') params.set('term', termSelect.value);
+    if (themeSelect.value !== 'all') params.set('theme', themeSelect.value);
+    if (directionSelect.value !== 'id') params.set('dir', directionSelect.value);
+    if (poolSelect.value !== 'all') params.set('pool', poolSelect.value);
+    if (shuffleBox.checked) params.set('shuffle', '1');
+    const query = params.toString();
+    window.history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}`);
+  }
+
+  function resetPosition() {
+    index = 0;
+    shuffledIds = null;
+    setFlipped(false);
+    writeUrl();
+    render();
+  }
+
+  function mark(status) {
+    const deck = currentDeck();
+    const item = deck[index];
+    if (!item) return;
+    progress[item.id] = status;
+    saveProgress();
+    const nextDeck = currentDeck();
+    const stillHere = nextDeck[index] && nextDeck[index].id === item.id;
+    if (stillHere) {
+      if (index < nextDeck.length - 1) index += 1;
+    } else if (index >= nextDeck.length) {
+      index = Math.max(0, nextDeck.length - 1);
+    }
+    setFlipped(false);
+    render();
+  }
+
+  termSelect.addEventListener('change', () => {
+    fillThemes();
+    resetPosition();
+  });
+  themeSelect.addEventListener('change', resetPosition);
+  directionSelect.addEventListener('change', () => {
+    setFlipped(false);
+    writeUrl();
+    render();
+  });
+  poolSelect.addEventListener('change', resetPosition);
+  shuffleBox.addEventListener('change', resetPosition);
+  shuffleAgain.addEventListener('click', () => {
+    shuffledIds = null;
+    index = 0;
+    setFlipped(false);
+    render();
+  });
+  flipButton.addEventListener('click', () => {
+    if (flipButton.hidden) return;
+    setFlipped(!flipped);
+    render();
+  });
+  knownButton.addEventListener('click', () => mark('known'));
+  unknownButton.addEventListener('click', () => mark('unknown'));
+  prevButton.addEventListener('click', () => {
+    if (index > 0) index -= 1;
+    setFlipped(false);
+    render();
+  });
+  nextButton.addEventListener('click', () => {
+    const deck = currentDeck();
+    if (index < deck.length - 1) index += 1;
+    setFlipped(false);
+    render();
+  });
+  resetButton.addEventListener('click', () => {
+    if (!resetArmed) {
+      resetArmed = true;
+      resetButton.textContent = 'Confirm reset';
+      resetNote.hidden = false;
+      return;
+    }
+    progress = {};
+    saveProgress();
+    resetArmed = false;
+    resetButton.textContent = 'Reset progress';
+    resetNote.hidden = true;
+    setFlipped(false);
+    render();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    const tag = document.activeElement?.tagName;
+    if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return;
+    if (event.key === 'f' || event.key === 'F') {
+      event.preventDefault();
+      flipButton.click();
+    } else if (event.key === 'k' || event.key === 'K') {
+      if (!knownButton.hidden) mark('known');
+    } else if (event.key === 'u' || event.key === 'U') {
+      if (!unknownButton.hidden) mark('unknown');
+    } else if (event.key === 'ArrowRight') {
+      nextButton.click();
+    } else if (event.key === 'ArrowLeft') {
+      prevButton.click();
+    }
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('term')) termSelect.value = params.get('term');
+  fillThemes();
+  if (params.get('theme')) themeSelect.value = params.get('theme');
+  if (![...themeSelect.options].some((option) => option.value === themeSelect.value)) themeSelect.value = 'all';
+  if (params.get('dir') === 'en' || params.get('dir') === 'id') directionSelect.value = params.get('dir');
+  if (params.get('pool')) poolSelect.value = params.get('pool');
+  shuffleBox.checked = params.get('shuffle') === '1';
+  render();
+</script>
+</Base>

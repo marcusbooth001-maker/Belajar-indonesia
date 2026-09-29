@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { siteUrl } from '../lib/url.js';
+---
+
+<Base title="Page not found · Belajar Indonesia">
+  <article class="page">
+    <h1>Page not found</h1>
+    <p>That address is not part of this course site.</p>
+    <p><a href={siteUrl('/')}>Back to the overview</a></p>
+  </article>
+</Base>

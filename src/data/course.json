@@ -1,0 +1,5920 @@
+{
+  "title": "Two-Year Indonesian (Bahasa Indonesia) Course Plan",
+  "titleId": "Rencana Pembelajaran Bahasa Indonesia Dua Tahun",
+  "tagline": "Heritage learners at secondary level · CEFR A2 → B2 · 5 lessons per week over 2 years",
+  "dated": "Course plan · September 2026 · British English",
+  "vocabTotal": 1817,
+  "termMeta": [
+    {
+      "n": 1,
+      "year": "Year 1",
+      "title": "Aku dan Duniaku (Me and my world)",
+      "cefr": "A2 production (consolidation); input pitched at B1",
+      "count": 206
+    },
+    {
+      "n": 2,
+      "year": "Year 1",
+      "title": "Hidup Sehari-hari (Everyday life)",
+      "cefr": "A2 secure → A2+",
+      "count": 210
+    },
+    {
+      "n": 3,
+      "year": "Year 1",
+      "title": "Dunia Remaja (The teen world)",
+      "cefr": "B1 (entry)",
+      "count": 215
+    },
+    {
+      "n": 4,
+      "year": "Year 1",
+      "title": "Jelajah Indonesia (Exploring Indonesia)",
+      "cefr": "B1 (secure)",
+      "count": 220
+    },
+    {
+      "n": 5,
+      "year": "Year 2",
+      "title": "Indonesia Hari Ini (Indonesia today)",
+      "cefr": "B1+",
+      "count": 231
+    },
+    {
+      "n": 6,
+      "year": "Year 2",
+      "title": "Suara Kita (Our voices)",
+      "cefr": "B1+ → B2 (developing)",
+      "count": 240
+    },
+    {
+      "n": 7,
+      "year": "Year 2",
+      "title": "Masa Depanku (My future)",
+      "cefr": "B2 (entry)",
+      "count": 245
+    },
+    {
+      "n": 8,
+      "year": "Year 2",
+      "title": "Sejarah, Sastra, dan Jati Diri (History, literature and identity)",
+      "cefr": "B2 (secure)",
+      "count": 250
+    }
+  ],
+  "home": [
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Two-Year Indonesian (Bahasa Indonesia) Course Plan",
+          "strong": true
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Rencana Pembelajaran Bahasa Indonesia Dua Tahun",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Heritage learners at secondary level · CEFR A2 → B2 · 5 lessons per week over 2 years",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "headers": null,
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "Learners",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Teenage heritage learners (one Indonesian-speaking parent) at a school in Indonesia",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Time",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "8 terms × 10 weeks × 5 lessons of 60 min ≈ 400 hours",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Progression",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "CEFR A2 (Term 1) → B1 (end of Year 1) → B2 (end of Year 2)",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Vocabulary",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "1,817 listed core words and phrases (Year 1: 851; Year 2: 966)",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Methods",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "CEFR · CLT/TBLT · comprehensible input · heritage-learner pedagogy · focus on form · spaced repetition",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Course plan · September 2026 · British English",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Contents"
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "1. Overview: aims, assumptions, levels, methods and weekly rhythm",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "2. Term-by-term plan (Terms 1–8)",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "3. Vocabulary lists (Terms 1–8)",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "4. Assessment plan and CEFR checkpoints",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "5. Suggested resources",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Appendix A. Register: pronouns and colloquial Jakarta features",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Appendix B. Affix reference: meN- sound changes and affix functions",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "At a glance"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Term",
+        "Year",
+        "Title and theme",
+        "CEFR target",
+        "Vocab"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "T1",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 1",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Aku dan Duniaku (Me and my world)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "A2 production (consolidation); input pitched at B1",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "206",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T2",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 1",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Hidup Sehari-hari (Everyday life)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "A2 secure → A2+",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "210",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T3",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 1",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Dunia Remaja (The teen world)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1 (entry)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "215",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T4",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 1",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Jelajah Indonesia (Exploring Indonesia)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1 (secure)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "220",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T5",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Indonesia Hari Ini (Indonesia today)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1+",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "231",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T6",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Suara Kita (Our voices)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1+ → B2 (developing)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "240",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T7",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Masa Depanku (My future)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B2 (entry)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "245",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T8",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Year 2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Sejarah, Sastra, dan Jati Diri (History, literature and identity)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B2 (secure)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "250",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "1. Overview"
+    },
+    {
+      "type": "h3",
+      "text": "1.1 Course aims"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Turn students' strong passive understanding of home (colloquial Jakarta-style) Indonesian into confident, accurate speaking, reading and writing.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Give students control of both registers: everyday informal Indonesian and standard/formal Indonesian (bahasa baku), and the judgement to choose between them.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Build a large, active vocabulary (about 1,800 core items taught explicitly, plus personal and incidental vocabulary) organised by word family and affix.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Master the core morphology of Indonesian – especially affixation – which is the main gap for heritage learners.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Reach CEFR B2 overall by the end of Year 2 (listening likely higher), with evidence recorded against CEFR can-do descriptors and the Indonesian BIPA competency levels.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Deepen students' connection to Indonesian culture, history and literature, and to their own bilingual, bicultural identity.",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "1.2 Planning assumptions"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Item",
+        "Assumption"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "Duration",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "2 school years; 40 teaching weeks per year in 4 terms of 10 weeks (8 terms in total).",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Contact time",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "1 lesson of about 60 minutes per day, 5 days a week = 50 lessons per term, 200 per year, about 400 hours in total.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Term shape",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Weeks 1–8: four 2-week thematic units. Week 9: project week. Week 10: assessment, feedback and consolidation.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Independent study",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "About 15 minutes of spaced-repetition review a day plus 60 minutes a week of extensive reading or listening, and one short weekly family task (about 2 hours a week in total).",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Learners",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Teenagers (about 13–17) with one Indonesian-speaking parent; they understand everyday home Indonesian but speak, read and write it weakly. Class size assumed to be 10–20.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Starting level",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Uneven profile, typical of heritage learners: listening roughly A2+/B1 for familiar everyday topics; speaking A1–A2 (often mixed with English); reading and writing A1–A2; little control of formal register or affixes.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Setting",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "A school in Indonesia, so authentic input and real-world tasks (markets, transport, local community, news) are all around the students.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Materials",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Teacher-curated authentic materials plus the free Badan Bahasa BIPA series Sahabatku Indonesia untuk Pelajar (BIPA 1–7) as a reference spine.",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "1.3 Level targets: why A2 → B2"
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Why start at A2 and not A1? Heritage learners already know the sound system, basic word order, a few thousand receptive words and a lot of everyday chunks. Starting at A1 would waste their advantage and bore them. Term 1 therefore consolidates A2 production quickly, while listening and reading input is pitched higher (B1) from the start.",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Why aim for B2 and not C1? About 400 contact hours plus about 150 hours of structured independent study, on top of a strong receptive base and daily exposure in Indonesia, makes B2 (independent user: can discuss abstract topics, argue a view, and write clear, detailed formal texts) ambitious but realistic. C1 needs sustained academic reading and writing that goes beyond a 5-lesson-a-week school course; able students can still reach C1 in listening.",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Why CEFR? It is the international reference for language levels, it has detailed can-do descriptors for teenagers' communicative tasks (updated in the 2020 Companion Volume, including mediation), and Indonesia's own BIPA competency standards (Permendikbud No. 27 Tahun 2017, 7 levels) were explicitly adapted from CEFR. So the CEFR spine lines up with Indonesian national materials.",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Indicative alignment used for planning (not an official equivalence): Terms 1–2 ≈ BIPA 2 (A2), Terms 3–4 ≈ BIPA 3 (B1), Terms 5–6 ≈ BIPA 4 (B1+), Terms 7–8 ≈ BIPA 5 (B2).",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "1.4 Methods and how each is used"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Method",
+        "Basis",
+        "How it is used in this course"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "CEFR levels and can-do descriptors",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Council of Europe (2001; Companion Volume 2020).",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "The progression spine. Each term has a CEFR target and 'can-do' statements that drive the task design, the rubrics and student self-assessment.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Communicative language teaching (CLT)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Meaning-focused interaction in realistic situations.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Information gaps, role-plays (warung, market, clinic, job interview), surveys and discussions every week; accuracy is taught in service of communication.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Task-based language teaching (TBLT)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Willis (1996) task cycle; Ellis (2003).",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Every Wednesday runs a pre-task → task → planning → report → language-focus cycle. Week 9 of every term is a larger project (e.g. class news bulletin, debate tournament, cultural evening).",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Comprehensible input",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Krashen's input hypothesis (i+1).",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Monday input lessons use stories, songs, video, news and texts slightly above current level. Because heritage students understand more than they can say, input is pitched about half a level above the output target. Themes are recycled over two weeks ('narrow input') so that vocabulary repeats naturally.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Heritage-learner pedagogy",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Valdés (2001); Polinsky & Kagan (2007).",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Start from what students already know (home Indonesian), make it explicit, then bridge it to standard forms: colloquial → baku mapping tables, register-switch rewriting, and literacy through genres they meet in real life. The home variety is valued, not 'corrected away'. Weekly family tasks (e.g. interview a parent) turn home into a source of input and output. Targets typical gaps: affixes, formal pronouns and address, spelling (EYD), and extended talk.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Explicit grammar: focus on form",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Long (1991); noticing.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Tuesday lessons draw grammar from Monday's text (noticing), explain it briefly and explicitly, then move from controlled to freer practice. There is a planned sequence for affixation (ber-, meN-, di-, ter-, -kan, -i, ke-…-an, peN-, peN-…-an, per-…-an, memper-), reduplication, aspect markers, classifiers and register.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Spaced repetition and systematic vocabulary",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Anki; Nation's 'four strands'.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Each term's vocabulary list is issued as an Anki deck (recognition, production, cloze-sentence and audio cards). About 5–8 new list cards per school day plus personal words from reading. Time is balanced across Nation's four strands: meaning-focused input, meaning-focused output, language-focused learning and fluency development.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Register and sociolinguistic awareness",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Formal vs informal Indonesian.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Pronoun and address systems (saya/aku/gue; Anda/kamu/lu; Bapak/Ibu/Kak) are taught from week 1. Speaking tasks state the required register; written tasks use baku unless the genre is informal (chat, social media).",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "1.5 Weekly lesson rhythm"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Day",
+        "Focus",
+        "What happens"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "Monday",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Input and vocabulary",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Comprehensible input on the unit theme (text, video, song, story); new words met in context; word-family mapping; new SRS cards released.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Tuesday",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Grammar (focus on form)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Noticing the target structure in Monday's input; short explicit explanation (usually an affix or aspect/register point); controlled → freer practice; mini-quiz on the exit ticket.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Wednesday",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Speaking task (TBLT)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Task cycle: pre-task, pair or group task, planning, report to class, feedback and language focus. The register is set by the task.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Thursday",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Reading and writing",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Authentic text of the target genre; genre and structure analysis; guided writing; colloquial → baku rewriting; peer editing using EYD checklists.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Friday",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Review and assessment",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Vocabulary and grammar quiz (15 min); fluency games; extensive reading/listening time; reflection against can-do statements; weekend family task set.",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "A typical 60-minute lesson: warm-up and SRS check (5–10 min) → main input or task (35–40 min) → consolidation and error focus (10 min) → exit ticket (5 min).",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Each 10-week term follows the same shape: four 2-week units (weeks 1–8), a project week (week 9) in which students use the term's language in an extended task, and an assessment and consolidation week (week 10).",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "1.6 Vocabulary approach"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "About 1,800 core words and phrases are listed in Section 3, rising from about 205 in Term 1 to about 250 in Term 8 (Year 1 ≈ 850, Year 2 ≈ 965). The lists are a minimum: students also add personal words from their reading and from home.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Words are grouped by theme and taught as families (e.g. makan → makanan, memakan, dimakan), so every affix lesson also grows vocabulary.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Colloquial items are marked [coll.] with the standard form after '→'. Heritage students usually know the colloquial form; the goal is to add the standard one, not to replace the home one.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Spelling follows EYD Edition V and KBBI (e.g. Idulfitri, salat, kaus, antre, karier, apotek, utang).",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "1.7 Register policy: bridge, don’t ban"
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Colloquial Indonesian is the students' strength and the language of their homes; it is used as the starting point, not treated as an error. Every task states its register. In speaking tasks with peers, natural informal Indonesian is welcome; in presentations, interviews and all formal writing, standard Indonesian (bahasa baku) is required and assessed. Appendix A sets out the pronoun system and the main colloquial Jakarta features, with their standard equivalents.",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "2. Term-by-term plan"
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Each term lists its CEFR target, themes, grammar, speaking and writing tasks, authentic materials and assessment, followed by a week-by-week outline. Grammar is cumulative: earlier points are recycled in later terms.",
+          "strong": false
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "n": 1,
+      "year": "Year 1",
+      "title": "Term 1: Aku dan Duniaku (Me and my world)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "A2 production (consolidation); input pitched at B1 · ≈ BIPA 2",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Activate what students already understand, get them talking from day one, and make the register system explicit.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "Identity and introductions; family and home languages; school life; daily routine and time; describing people.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Basic clause structure: subject–verb–object, noun + adjective, relative marker yang",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Pronouns and address terms by register: saya/aku/gue; Anda/kamu/lu; Bapak/Ibu/Kak; kami vs kita",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Negation: tidak, bukan, belum, jangan",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Aspect markers: sudah, belum, sedang, akan, masih, baru, pernah",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Question words and apakah; numbers, dates, clock time",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Possession: -ku, -mu, -nya, punya",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• ber- verbs (introduction): bersekolah, berangkat, berpakaian",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Colloquial → formal bridge: nggak → tidak, udah → sudah, gimana → bagaimana; first look at -in → -kan/-i",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• 'Siapa aku?' partner interview, then introduce your partner to the class",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Family-tree presentation (including which languages are spoken at home)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Daily-routine information gap (find someone who …)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Same message, two registers: ask a teacher vs a friend for help",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Personal profile (120–150 words, formal)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• 'A day in my life' blog post (informal)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Register switch: rewrite a WhatsApp chat as a polite message to a teacher",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Sahabatku Indonesia untuk Pelajar BIPA 1–2 (selected units)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Real school documents: timetables, notices, the school website",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Short 'day in my life' vlogs by Indonesian teenagers (teacher-selected)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Students' own (anonymised) family chats as data for register work",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1 diagnostic: listening, speaking interview, short writing, register awareness",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Weekly Friday vocabulary and grammar quizzes",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• End of term: A2 oral interview (5 min), personal profile, listening test",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1: Diagnostic; introductions; 'Who says gue?' register awareness",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 2: Identity and origins; pronouns and address terms",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: Family: family trees, descriptions, possession",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: School life: negation, question words, timetables",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7–8: Daily routine and time: aspect markers",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: 'Profil Saya' video or poster in formal and informal versions",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: Assessment, feedback, SRS catch-up",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "206 listed items (see Section 3, Term 1)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "year": "Year 1",
+      "title": "Term 2: Hidup Sehari-hari (Everyday life)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "A2 secure → A2+ · ≈ BIPA 2",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Use Indonesia as the classroom: food, markets, homes and friends, with meN- verbs as the grammar centrepiece.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "Food and eating out; shopping and money; home and chores; friends and hobbies; weather.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• meN- verbs and nasal assimilation (membaca, menulis, menyapu, mengirim, memasak)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• ber- vs meN-: intransitive vs transitive (bermain vs memainkan preview)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Classifiers with se-: seorang, sebuah, seekor, selembar, sebiji, sebatang, sepotong",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• -nya as 'the' / definite (Harganya berapa?); -an nouns (makanan, minuman)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Plurals: reduplication (buku-buku) and quantifiers (banyak, beberapa, semua)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Comparison: lebih … daripada, paling, ter- superlative, se- equative",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Requests and commands: tolong, silakan, -lah, jangan",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Large numbers and prices (ribu, juta)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Market bargaining role-play using real prices",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Ordering at a warung (and handling problems with the order)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Cooking demonstration with step-by-step narration",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Hobby survey: collect data and report back",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Recipe (procedural text)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Product or food review",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Description of my (dream) house",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Invitation: informal to a friend vs formal to a teacher",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Real menus from local warung and food-delivery apps (screenshots)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Supermarket catalogues and receipts",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Indonesian cooking videos (teacher-selected)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Sahabatku Indonesia untuk Pelajar BIPA 2",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Role-play (bargaining or ordering), assessed with rubric",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Written recipe or review (150–200 words)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• meN- form test; weekly quizzes; listening to shop and market dialogues",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1–2: Food and eating out: meN- verbs, classifiers",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: Shopping and money: numbers, bargaining, comparison",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: Home and chores: commands and requests, -nya",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7–8: Friends, hobbies, weather: ber- verbs, reduplication",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: class 'warung day' or narrated cooking video",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: Assessment and consolidation",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "210 listed items (see Section 3, Term 2)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "year": "Year 1",
+      "title": "Term 3: Dunia Remaja (The teen world)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "B1 (entry) · ≈ BIPA 3",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Teen interests drive the input; passives, ter- and ke-…-an unlock narrative and description.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "Social media and devices; music and film; sport; body and health; feelings; appearance and personality.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• di- passive and object focus (Video itu diunggah kemarin)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Passive type 2 with pronoun agents (Lagu itu sudah saya dengar; kubaca)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• -kan and -i: introduction (menyalakan, membersihkan; menyukai)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• ter-: accidental action and resultant state (tertidur, terbuka, tersesat)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• ke-…-an: adversative and 'too …' (kehujanan, ketinggalan, kebesaran)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Narrative connectors: lalu, kemudian, setelah itu, waktu, walaupun, supaya",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Relative clauses with yang (lagu yang paling saya suka)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Vlog-style review of a song or film",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Survey of classmates' social-media habits, presented with a chart",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Doctor–patient role-play at a clinic or pharmacy",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Story of a 'bad day' using ter- and ke-…-an",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Social-media post vs formal reply to a comment",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Film or song review (200–250 words)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Diary entry narrating an event",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Rewrite an informal chat as a formal email",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Indonesian pop songs and lyrics (e.g. Tulus, Hindia, Nadin Amizah, Bernadya)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Film trailers and clips (e.g. Petualangan Sherina, 2000; Keluarga Cemara, 2019)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Online sports news (e.g. detikcom, Kompas.com)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Health leaflets from a puskesmas; Sahabatku Indonesia untuk Pelajar BIPA 3",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• 3-minute review presentation with questions",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Written review (200–250 words)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Passive and affix test; song gap-fill and interview listening",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1–2: Social media and devices: di- passive in signs and instructions ('Dilarang …')",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: Music and film: reviews, -kan and -i",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: Sport and fitness: passive type 2, match commentary",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7–8: Body, health and feelings: ter-, ke-…-an",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: class podcast (siniar) or vlog episode",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: Assessment and consolidation",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "215 listed items (see Section 3, Term 3)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "year": "Year 1",
+      "title": "Term 4: Jelajah Indonesia (Exploring Indonesia)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "B1 (secure) · ≈ BIPA 3 · end-of-Year-1 checkpoint",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Travel, geography and culture, with nominal affixes and reported speech; the family becomes a research source.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "Transport and directions; travel and accommodation; geography and nature; everyday environment; festivals, religion and customs; traditional arts.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• ke-…-an nouns (kebudayaan, keberangkatan, kedatangan)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• peN- agent nouns and peN-…-an / per-…-an nouns (penumpang, perjalanan, pertemuan)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• se- forms (seseorang, sesuatu, sebelum)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Reported speech: katanya, bahwa, menurut, apakah",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Location and direction phrases; time clauses (sebelum, sesudah, ketika)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Word-family work: jalan → berjalan, perjalanan, menjalankan",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Plan a trip itinerary and 'sell' it to clients",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Map task: asking for and giving directions",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Presentation on a festival, including personal and family experience",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Interview a parent about their home town (heritage task)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Travel blog",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Formal booking or enquiry email",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Descriptive text about a province",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Report of the parent interview using reported speech",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Official tourism material (e.g. the Wonderful Indonesia campaign)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Train and ferry timetables, maps, ride-hailing app screens",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Folk legends (e.g. Malin Kundang, Danau Toba)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Laskar Pelangi (film, 2008) excerpts set in Belitung; Sahabatku Indonesia untuk Pelajar BIPA 3",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• B1 oral presentation with Q&A (province or festival)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• B1 writing: descriptive or narrative text (300 words)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Year-end listening and reading test; portfolio review; SRS statistics",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1–2: Transport and directions",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: Geography and nature: each student adopts a province",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: Festivals, religion, customs; gotong royong",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7–8: Heritage project: interviewing parents; reported speech",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: 'Pameran Nusantara' province expo",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: End-of-Year-1 assessment and CEFR checkpoint",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "220 listed items (see Section 3, Term 4)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "year": "Year 2",
+      "title": "Term 5: Indonesia Hari Ini (Indonesia today)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "B1+ · ≈ BIPA 4",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Move into the public, formal register through news, society and technology.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "News and media literacy; government, elections and community; science and technology; digital life and online safety; disasters and emergencies.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• memper-, memper-…-kan, memper-…-i (memperbaiki, memperkenalkan, memperingati)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• -i vs -kan contrasts (mendekati / mendekatkan, mengirimi / mengirimkan)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Complex passives: di-…-kan, di-…-i, diper-",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Nominalisation in news style (pembangunan, kemiskinan, penemuan); headline style",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Formal connectors: namun, oleh karena itu, sehingga, selain itu, adapun",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• ber-…-an (berdatangan, bersalaman); numbers and statistics",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Produce and perform a 5-minute news bulletin",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Interview a community figure (e.g. head of RT, school staff member)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Structured discussion of a current news story",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• News report (5W + 1H: apa, siapa, kapan, di mana, mengapa, bagaimana)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Summary of an authentic article",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Formal letter to a local authority about a community issue",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Kompas, Tempo, BBC News Indonesia, detikcom",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• TV news clips (e.g. Kompas TV, Metro TV); Narasi programmes",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• BMKG public warnings; Kok Bisa? science explainer videos",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Sahabatku Indonesia untuk Pelajar BIPA 4",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• News bulletin performance (group and individual marks)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• News report (250–300 words)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Authentic news reading test; memper-/-kan/-i test",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1–2: News and media literacy: news-report genre",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: Government, elections, community (RT/RW, musyawarah)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: Science, technology and digital life (hoaxes, digital footprint)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7–8: Disasters and emergencies (early warning, response)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: class news bulletin (video)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: Assessment and consolidation",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "231 listed items (see Section 3, Term 5)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "year": "Year 2",
+      "title": "Term 6: Suara Kita (Our voices)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "B1+ → B2 (developing) · ≈ BIPA 4",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Argue, persuade and negotiate on issues teenagers care about.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "Opinion and debate; social issues and youth; environment and climate; health and wellbeing; education and urban issues.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Argumentative text structure: thesis – arguments – reaffirmation",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Conditionals: jika, apabila, seandainya, andaikan, kalau saja",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Concession and contrast: meskipun, biarpun, padahal, sebaliknya",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Modality and hedging: seharusnya, sebaiknya, boleh jadi, belum tentu, tampaknya",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Reduplication with affixes: tolong-menolong, secepat-cepatnya, kebarat-baratan",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Cause and effect: menyebabkan, mengakibatkan, sehingga",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Structured team debates (three speakers per side) on teen-relevant motions",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Panel discussion with a moderator",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Negotiation role-play (e.g. school rules, class budget)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Argumentative essay (400–500 words)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Opinion column or letter to the editor",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Persuasive campaign poster and caption",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Opinion columns (Kompas, Tempo); talk-show clips (e.g. Mata Najwa)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Infographics and data from BPS (Statistics Indonesia)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Environmental campaign material (e.g. WWF-Indonesia)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Socially themed songs (e.g. Iwan Fals)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Debate performance (rubric)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Argumentative essay",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Talk-show listening test; mid-Year-2 CEFR checkpoint (B1+)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1–2: Opinions and debate skills",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: Social issues and youth (mental health, peer pressure, gender)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: Environment and climate in Indonesia (haze, deforestation, subsidence)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7–8: Education and urban issues; negotiation",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: inter-class debate tournament",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: Assessment and consolidation",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "240 listed items (see Section 3, Term 6)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "year": "Year 2",
+      "title": "Term 7: Masa Depanku (My future)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "B2 (entry) · ≈ BIPA 5",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Formal, professional and academic Indonesian for work and study.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "Work and careers; professions; education and university; economy and business; personal finance; formal letters; academic and science language.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Effective sentences (kalimat efektif) and formal register",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Complex nominalisation: ke-ber-…-an, ke-ter-…-an (keberhasilan, keterlibatan)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Loan suffixes: -wan/-wati, -isme, -is; se-…-nya adverbs (sebaiknya, sebenarnya)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Formal passives and agentive oleh; clauses with bahwa and yang",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Letter and email conventions; hedging in reports",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Mock job or scholarship interview",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Business pitch for a small-business (UMKM) product",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Presentation of a mini-research survey",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Formal phone or video call",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• CV and cover letter (surat lamaran)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Formal email",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Mini research report (background, method, results, discussion, conclusion)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Short business proposal",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Real job advertisements (e.g. JobStreet Indonesia)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• University websites (e.g. UI, UGM, ITB)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• BPS data; company profiles; Kok Bisa? videos",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Sahabatku Indonesia untuk Pelajar BIPA 5",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Mock interview",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• CV and cover letter",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Research report and presentation",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1–2: Jobs, careers and the workplace",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: Applications: CV, cover letter, interviews",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: Economy, business and entrepreneurship (UMKM pitch)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7–8: Academic language and mini research project (survey)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: 'Expo Karier' pitches and research presentations",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: Assessment and consolidation",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "245 listed items (see Section 3, Term 7)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "year": "Year 2",
+      "title": "Term 8: Sejarah, Sastra, dan Jati Diri (History, literature and identity)",
+      "blocks": [
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "CEFR target: ",
+              "strong": true
+            },
+            {
+              "text": "B2 (secure) · ≈ BIPA 5 · exit checkpoint",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "runs": [
+            {
+              "text": "Read Indonesia's story and literature, reflect on identity, and bring the whole affix system together.",
+              "strong": false
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Strand",
+            "Content"
+          ],
+          "rows": [
+            [
+              [
+                [
+                  {
+                    "text": "Themes",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "Kingdoms, trade and colonialism; national awakening and independence; modern Indonesia; poetry, pantun, short stories and novels; language and identity; idioms and proverbs.",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Grammar focus",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Literary and elevated style; archaic and literary vocabulary",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Particles -lah, -kah, pun; focus with adalah, merupakan, ialah",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Narrative passives in historical writing",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Figurative language (majas); idioms and proverbs",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Whole-system affix review: word-family maps",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Cohesion, summarising and paraphrasing",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Speaking tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Historical presentation or role-play (e.g. Sumpah Pemuda 1928, Proklamasi 1945)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Poetry recitation (deklamasi), e.g. Chairil Anwar's 'Aku'",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Pantun exchange (berbalas pantun)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Book talk on a novel extract; final oral examination",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Writing tasks",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Literary analysis of a short story (intrinsic elements)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Original pantun and a short poem",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Historical explanatory text",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Reflective essay: 'Bahasa dan jati diriku' (language and my identity)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Authentic materials",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Texts of the Sumpah Pemuda and the Proclamation of Independence",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Museum visit (e.g. Museum Nasional, or a local museum)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Extracts from Laskar Pelangi (Andrea Hirata) and Bumi Manusia (Pramoedya Ananta Toer; film 2019)",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Poems by Chairil Anwar and Sapardi Djoko Damono; folk tales (Malin Kundang, Sangkuriang, Timun Mas); Sunday short stories in Kompas",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Assessment",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Final examination in all four skills",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Literary analysis essay",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Final oral; portfolio review; exit CEFR checkpoint (B2)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Week-by-week outline",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "• Week 1–2: Kingdoms, spice trade and colonial rule",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 3–4: National awakening, independence, Old Order, New Order, Reformasi",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 5–6: Literature: poetry, pantun, short stories",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 7: Novel and film: Laskar Pelangi / Bumi Manusia extracts",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 8: Language and identity; idioms and proverbs; exam preparation",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 9: Project: 'Malam Budaya' literary and cultural evening",
+                    "strong": false
+                  }
+                ],
+                [
+                  {
+                    "text": "• Week 10: Final assessment and exit checkpoint",
+                    "strong": false
+                  }
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  {
+                    "text": "Vocabulary",
+                    "strong": true
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "text": "250 listed items (see Section 3, Term 8)",
+                    "strong": false
+                  }
+                ]
+              ]
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabIntro": [
+    {
+      "type": "h2",
+      "text": "3. Vocabulary lists"
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "The lists contain 1,817 words and phrases: Year 1 851, Year 2 966. Per term: T1 206; T2 210; T3 215; T4 220; T5 231; T6 240; T7 245; T8 250. Each item appears only once across the course; later terms recycle earlier words in new contexts.",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Conventions: ",
+            "strong": true
+          },
+          {
+            "text": "[coll.] = colloquial/informal; '→' gives the standard (baku) equivalent; '(← root)' shows the root word so that students learn word families; '/' separates alternatives. Spelling follows EYD Edition V and KBBI.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Using the lists: ",
+            "strong": true
+          },
+          {
+            "text": "each term's list is loaded into a shared Anki deck with recognition, production and example-sentence cards. Introduce words through Monday input, not as bare lists; test a sample every Friday.",
+            "strong": false
+          }
+        ]
+      ]
+    }
+  ],
+  "assessment": [
+    {
+      "type": "h2",
+      "text": "4. Assessment plan and CEFR checkpoints"
+    },
+    {
+      "type": "h3",
+      "text": "4.1 Principles"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Diagnose first: in Term 1, week 1, each student gets a skills profile (listening, speaking, reading, writing, register awareness), because heritage profiles are uneven.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Assess what is taught: every summative task mirrors the term's project and genre, and is marked with the same analytic rubric.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Assess both registers: tasks specify formal or informal, and 'register control' is a separate criterion.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Make progress visible: students keep a portfolio (writing drafts, audio/video recordings, SRS statistics) and self-assess against can-do statements each term, following the European Language Portfolio model.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Report by skill: termly reports give a CEFR band for each of the four skills, not just one overall grade.",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "4.2 Weighting (each term)"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Component",
+        "Element",
+        "Weight"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "Continuous (40%)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Weekly Friday quizzes (vocabulary and grammar)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "15%",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [],
+          [
+            [
+              {
+                "text": "Spaced-repetition completion and reading/listening log",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "10%",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [],
+          [
+            [
+              {
+                "text": "Classwork, speaking tasks and family tasks",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "15%",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Summative (60%)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "End-of-term speaking task (interview, presentation, debate)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "20%",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [],
+          [
+            [
+              {
+                "text": "End-of-term writing task (genre of the term)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "20%",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [],
+          [
+            [
+              {
+                "text": "Listening and reading test",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "20%",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "4.3 Analytic rubric (4 bands: below target / approaching / at target / above target)"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Criterion",
+        "What is assessed"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "Task fulfilment",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Covers the task, audience and purpose; content is relevant and developed.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Range",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Breadth of vocabulary (including term lists) and variety of structures.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Accuracy",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Grammar and especially affixation, word order and EYD spelling.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Register control",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Chooses and keeps the right register; formal texts avoid colloquial forms; informal tasks sound natural.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Fluency and coherence",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Flow, connectors, paragraphing, turn-taking.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Pronunciation (speaking)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Intelligibility, stress and intonation.",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "4.4 CEFR checkpoints"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Term",
+        "CEFR",
+        "Speaking / interaction can-do",
+        "Writing can-do"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "T1",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "A2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can describe family, school and routine in simple connected sentences; can switch between saya/aku and Anda/kamu appropriately.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a short personal profile with basic connectors and correct spelling of common words.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T2",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "A2+",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can handle everyday transactions (ordering, bargaining, prices) and give simple reasons and comparisons.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a clear recipe, review or invitation in the right register.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T3",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can narrate experiences and give opinions on music, film and sport with some detail.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a structured review or narrative using di- passives and connectors.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T4",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can give a prepared presentation and answer questions; can report what others said.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a 300-word description or narrative and a formal enquiry email.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T5",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1+",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can summarise and discuss news on familiar topics; can interview someone and follow up.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a news report and a formal letter using nominalisation and formal connectors.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T6",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B1+/B2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can argue a position, rebut points and negotiate; is largely fluent on familiar issues.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a coherent argumentative essay with conditionals, concession and hedging.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T7",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can take part in a formal interview and present research clearly with some spontaneity.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a CV, cover letter and short report in accurate formal Indonesian.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "T8",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "B2",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can discuss abstract, cultural and literary topics fluently and adapt register to audience.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Can write a clear, detailed literary or historical text with good control of affixation.",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "4.5 Major checkpoints and external benchmarks"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "End of Year 1 (Term 4, week 10): ",
+            "strong": true
+          },
+          {
+            "text": "B1 checkpoint in all four skills, including an oral presentation with questions and a 300-word text. Students below B1 in writing get targeted literacy support in Term 5.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Mid-Year 2 (Term 6, week 10): ",
+            "strong": true
+          },
+          {
+            "text": "B1+ checkpoint with a debate and an argumentative essay.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "End of course (Term 8, week 10): ",
+            "strong": true
+          },
+          {
+            "text": "B2 exit examination: listening and reading papers using authentic texts, an extended formal writing task, and a 15-minute oral (presentation plus discussion).",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Optional external benchmark: ",
+            "strong": true
+          },
+          {
+            "text": "UKBI Adaptif from Badan Bahasa (sections: listening, responding to grammar rules, reading, writing, speaking; 7 grades from Terbatas to Istimewa) for able Year 2 students who want an official certificate.",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "4.6 Differentiation"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Stretch tasks and extra authentic reading for students whose receptive level is well above the class target.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Literacy clinics (phonics–spelling links, EYD) for students who speak well but write weakly.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Mixed-ability pairing: stronger speakers help with fluency; stronger writers help with accuracy and formal register.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Personalised Anki cards for recurring individual errors, especially affix choice.",
+            "strong": false
+          }
+        ]
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "type": "h2",
+      "text": "5. Suggested resources"
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "Web addresses are for official sites checked in September 2026 (Indonesia's education ministry now uses the kemendikdasmen.go.id domain).",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "h4",
+      "text": "Curriculum and standards"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Permendikbud No. 27 Tahun 2017 – Standar Kompetensi Lulusan Kursus dan Pelatihan BIPA (7 levels, adapted from CEFR and aligned with UKBI).",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Sahabatku Indonesia untuk Pelajar, BIPA 1–7 (Badan Pengembangan dan Pembinaan Bahasa, PPSDK) – free textbooks for school-age BIPA learners, on the BIPA Daring portal: bipa.kemendikdasmen.go.id",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Council of Europe – Common European Framework of Reference for Languages (2001) and CEFR Companion Volume (2020).",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "European Language Portfolio (Council of Europe) – model for student self-assessment against can-do statements.",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h4",
+      "text": "Dictionaries, spelling and testing (Badan Bahasa)"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "KBBI VI Daring (official dictionary; free account required): kbbi.kemendikdasmen.go.id",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "EYD Edisi V (official spelling guide, 2022): ejaan.kemendikdasmen.go.id",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "UKBI Adaptif (Uji Kemahiran Berbahasa Indonesia; 7 grades from Terbatas to Istimewa) – optional external benchmark in Year 2: ukbi.kemendikdasmen.go.id",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h4",
+      "text": "Grammar references"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Sneddon, J. N., Adelaar, A., Djenar, D. N. & Ewing, M. C. (2010). Indonesian: A Comprehensive Grammar (2nd ed.). Routledge.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Sneddon, J. N. (2006). Colloquial Jakartan Indonesian. Pacific Linguistics – key reference for the colloquial → standard bridge.",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h4",
+      "text": "Vocabulary and spaced repetition"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Anki (free SRS software): apps.ankiweb.net – one shared deck per term, with audio.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Nation, I. S. P. (2013). Learning Vocabulary in Another Language (2nd ed.). Cambridge University Press.",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h4",
+      "text": "Methodology"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "Krashen, S. (1982). Principles and Practice in Second Language Acquisition. Pergamon.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Willis, J. (1996). A Framework for Task-Based Learning. Longman.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Ellis, R. (2003). Task-based Language Learning and Teaching. Oxford University Press.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Long, M. (1991). Focus on form: A design feature in language teaching methodology. In de Bot, Ginsberg & Kramsch (eds.), Foreign Language Research in Cross-Cultural Perspective. John Benjamins.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Valdés, G. (2001). Heritage language students: Profiles and possibilities. In Peyton, Ranard & McGinnis (eds.), Heritage Languages in America.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Polinsky, M. & Kagan, O. (2007). Heritage languages: In the 'wild' and in the classroom. Language and Linguistics Compass, 1(5).",
+            "strong": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h4",
+      "text": "Authentic media (teacher to select age-appropriate items)"
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "text": "News: Kompas, Tempo, BBC News Indonesia, detikcom; TV news (Kompas TV, Metro TV); Narasi.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Explainers: Kok Bisa? (YouTube science channel).",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Literature: Andrea Hirata, Laskar Pelangi; Pramoedya Ananta Toer, Bumi Manusia; poems by Chairil Anwar and Sapardi Djoko Damono; Sunday cerpen in Kompas; folk tales.",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Film: Petualangan Sherina (2000), Laskar Pelangi (2008), Keluarga Cemara (2019), Bumi Manusia (2019).",
+            "strong": false
+          }
+        ],
+        [
+          {
+            "text": "Music: Sheila on 7, Tulus, Hindia, Nadin Amizah, Bernadya, Iwan Fals; traditional and regional songs.",
+            "strong": false
+          }
+        ]
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "type": "h2",
+      "text": "Appendix A. Register: pronouns and colloquial Jakarta features"
+    },
+    {
+      "type": "h3",
+      "text": "A.1 Pronouns and key words by register"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Meaning",
+        "Formal / standard",
+        "Informal (general)",
+        "Jakarta colloquial"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "I / me",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "saya",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "aku",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "gue / gua (Jakarta)",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "you (sing.)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Anda; Bapak / Ibu / Kakak + name",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "kamu",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "lu / lo (Jakarta)",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "he / she",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "beliau (respectful); ia (written)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "dia",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "dia",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "we",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "kami (excl.) / kita (incl.)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "kami / kita",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "kita (often for both)",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "not",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "tidak",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "nggak / enggak",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "nggak / gak",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "already",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "sudah",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "udah",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "udah",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "how",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "bagaimana",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "gimana",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "gimana",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "make / do for",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "membuat / membuatkan",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "bikin / bikinin",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "bikin / bikinin",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "A.2 Colloquial Jakarta features and their standard equivalents"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Feature",
+        "Colloquial example",
+        "Standard (baku)"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "Nasal prefix without me-",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "nulis, nyapu, ngambil, mukul",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "menulis, menyapu, mengambil, memukul",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Suffix -in for -kan / -i",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "bacain, datengin, beliin",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "membacakan, mendatangi, membelikan",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Final-syllable a → e",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "bener, males, pinter, dalem",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "benar, malas, pintar, dalam",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Dropped sounds and short forms",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "udah, aja, abis, kalo, ntar, tau",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "sudah, saja, habis, kalau, nanti, tahu",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "lagi for progressive aspect",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Aku lagi makan.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Saya sedang makan.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "sama for dengan / dan / oleh / kepada",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Aku pergi sama dia. Dimarahin sama guru.",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Saya pergi dengan dia. Dimarahi oleh guru.",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Discourse particles",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "dong, sih, kok, deh, kan, nih, tuh",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "(omitted, or bukan? for kan)",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "Colloquial pronouns",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "gue, lu",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "saya/aku, kamu/Anda",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Appendix B. Affix reference"
+    },
+    {
+      "type": "h3",
+      "text": "B.1 meN- sound changes (nasal assimilation)"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Root begins with",
+        "Prefix form",
+        "Examples"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "vowel, g, h, k (k drops)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "meng-",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "ambil → mengambil; gambar → menggambar; hapus → menghapus; kirim → mengirim",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "b, p (p drops), f",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "mem-",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "baca → membaca; pakai → memakai; fitnah → memfitnah",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "d, c, j, t (t drops)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "men-",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "dengar → mendengar; cari → mencari; jual → menjual; tulis → menulis",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "s (s drops)",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "meny-",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "sapu → menyapu; sikat → menyikat",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "l, m, n, ny, ng, r, w, y",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "me-",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "lihat → melihat; masak → memasak; rapikan → merapikan",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "one-syllable roots",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "menge-",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "cat → mengecat; bom → mengebom; cas → mengecas",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "runs": [
+        {
+          "text": "The same sound changes apply to peN- (penulis, pembaca, pengirim, penyapu). Many loan words keep their first consonant (mengkritik, mengklaim).",
+          "strong": false
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "B.2 Main affixes, functions and when they are taught"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Affix",
+        "Main functions",
+        "Examples",
+        "Term"
+      ],
+      "rows": [
+        [
+          [
+            [
+              {
+                "text": "ber-",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "intransitive verbs; having/using; activity",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "bersekolah, bersepeda, berpakaian",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T1–T2",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "meN-",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "active verbs (mostly transitive)",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "membaca, menulis, memasak",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T2",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "di-",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "passive (3rd-person agent), object focus",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "dibaca, dimakan, dibungkus",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T3",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "passive type 2",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "passive with pronoun agent: object + agent + bare verb",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "Buku itu saya baca. / kubaca",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T3",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "ter-",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "accidental action; resultant state; superlative",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "tertidur, terbuka, terbesar",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T2–T3",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "-kan",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "causative; benefactive; moves an object",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "membersihkan, menyalakan, membelikan",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T3, T5",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "-i",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "locative/repetitive; the object is a place or person affected",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "menyukai, mendekati, menanami",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T3, T5",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "ke-…-an",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "abstract nouns; adversative (suffering); 'too …'",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "kebudayaan, kehujanan, kebesaran",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T3–T4",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "peN- / pe-",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "agent or instrument",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "penulis, pelari, penghapus",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T4",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "peN-…-an / per-…-an",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "process or result nouns",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "pendidikan, perjalanan, pertemuan",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T4–T5",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "memper- / memper-…-kan / -i",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "make more X; causative with ber- verbs",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "memperbaiki, memperkenalkan, memperingati",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T5",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "se-",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "one; the same as; whole",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "seorang, sebesar, sekeluarga",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T2, T4",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "-an",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "result or object nouns; plural/approximate",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "makanan, tulisan, ribuan",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T2",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "-nya",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "possessive; definite; nominaliser; adverbs",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "rumahnya, harganya, biasanya",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T1–T2",
+                "strong": false
+              }
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              {
+                "text": "reduplication",
+                "strong": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "plural/variety; reciprocity; intensity; manner",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "buku-buku, tolong-menolong, pelan-pelan, sayur-mayur",
+                "strong": false
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "text": "T2, T6",
+                "strong": false
+              }
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

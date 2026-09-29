@@ -1,0 +1,7 @@
+---
+const { runs = [] } = Astro.props;
+---
+
+{
+  runs.map((run) => (run.strong ? <strong>{run.text}</strong> : run.text))
+}
