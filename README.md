@@ -2,7 +2,7 @@
 
 A static site for a two-year Bahasa Indonesia course aimed at English-speaking teenagers with one Indonesian-speaking parent. It publishes the full course plan: aims, methods, weekly rhythm, eight terms, all 1,817 listed vocabulary items, assessment, resources and appendices.
 
-The site is built with [Astro](https://astro.build) and is set up for GitHub Pages at <https://marcusbooth001-maker.github.io/belajar-indonesia/>.
+The site is built with [Astro](https://astro.build) and is set up for GitHub Pages at <https://marcusbooth001-maker.github.io/Belajar-indonesia/>.
 
 ## Pages
 
@@ -43,4 +43,4 @@ Pages will not publish until it is switched on once in the repository settings:
 
 **Settings → Pages → Build and deployment → Source: GitHub Actions**
 
-The site uses the base path `/belajar-indonesia/`, which matches a project site on `https://marcusbooth001-maker.github.io/belajar-indonesia/`.
+The workflow reads the Pages base path from `actions/configure-pages` (`base_path`), so asset and page links follow the repository name, including its capitalisation. For this repository that path is `/Belajar-indonesia/`, which is `https://marcusbooth001-maker.github.io/Belajar-indonesia/`. A local `npm run build` uses the same path unless `BASE_PATH` is set.
