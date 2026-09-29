@@ -41,6 +41,7 @@ function isCurrent(href) {
           <div class="nav-links">
             <a href={siteUrl('/')} aria-current={isCurrent('/') ? 'page' : undefined}>Home</a>
             <a href={siteUrl('/vocabulary/')} aria-current={current === 'vocabulary' ? 'page' : undefined}>Vocabulary</a>
+            <a href={siteUrl('/audio/')} aria-current={current === 'audio' ? 'page' : undefined}>Audio</a>
             <a href={siteUrl('/flashcards/')} aria-current={current === 'flashcards' ? 'page' : undefined}>Flashcards</a>
             <a href={siteUrl('/assessment/')} aria-current={current === 'assessment' ? 'page' : undefined}>Assessment</a>
             <a href={siteUrl('/resources/')} aria-current={current === 'resources' ? 'page' : undefined}>Resources</a>
