@@ -721,6 +721,131 @@ input[type='checkbox'] {
   }
 }
 
+.audio-lesson {
+  margin-top: 2rem;
+  padding-top: 0.4rem;
+}
+
+.audio-lesson + .audio-lesson {
+  border-top: 1px solid var(--line);
+}
+
+.player {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.player audio {
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
+.player.is-enhanced audio {
+  display: none;
+}
+
+.player-transport,
+.player-meta,
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.player-transport button,
+.player .button {
+  min-height: 2.75rem;
+}
+
+.player-meta {
+  justify-content: space-between;
+  margin-top: 0.35rem;
+}
+
+.player-meta label {
+  min-width: 8rem;
+}
+
+.player-times {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.player-status {
+  min-height: 1.4rem;
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+}
+
+.seek-label {
+  margin-top: 0.8rem;
+}
+
+.player input[type='range'] {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  accent-color: var(--clay);
+}
+
+.vocab-group h4 {
+  margin: 1rem 0 0.35rem;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.word-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.word-list li {
+  background: #efe4d2;
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-weight: 650;
+}
+
+.transcript {
+  margin-top: 1.4rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 0.2rem 1rem 0.4rem;
+}
+
+.transcript summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.75rem 0;
+  min-height: 2.75rem;
+}
+
+.transcript-body p {
+  max-width: 70ch;
+}
+
+.transcript-body h3,
+.transcript-body h4 {
+  font-family: var(--serif);
+  color: var(--indigo);
+  scroll-margin-top: 6.5rem;
+}
+
+.transcript-body .cue {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

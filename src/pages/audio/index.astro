@@ -1,0 +1,347 @@
+---
+import Base from '../../layouts/Base.astro';
+import { siteUrl } from '../../lib/url.js';
+import { renderTranscript } from '../../lib/transcript.js';
+import lessons from '../../data/lessons.json';
+
+const transcriptFiles = import.meta.glob('../../data/transcripts/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+
+function transcriptHtml(name) {
+  if (!name) return '';
+  const entry = Object.entries(transcriptFiles).find(([path]) => path.endsWith(`/${name}`));
+  return entry ? renderTranscript(entry[1]) : '';
+}
+
+const prepared = lessons.map((lesson) => ({
+  ...lesson,
+  src: siteUrl(`/audio/${lesson.file}`),
+  html: transcriptHtml(lesson.transcript),
+}));
+---
+
+<Base
+  title="Audio lessons · Belajar Indonesia"
+  current="audio"
+  description="Listen to Indonesian lesson audio, with a transcript and the vocabulary each lesson covers."
+>
+  <article class="page">
+    <h1>Audio lessons</h1>
+    <p>
+      Listen on headphones or out loud. Your place in each lesson is saved in this browser.
+      New lessons are added by placing an mp3 in the audio folder and adding one entry to the lesson list.
+    </p>
+    <noscript>
+      <p class="noscript">The player buttons need JavaScript. You can still use the download link and read the transcript.</p>
+    </noscript>
+
+    {
+      prepared.map((lesson) => (
+        <section class="audio-lesson" id={lesson.id} aria-labelledby={`${lesson.id}-title`}>
+          <p class="eyebrow">
+            {lesson.badge} · Term {lesson.term} · {lesson.duration}
+          </p>
+          <h2 id={`${lesson.id}-title`}>{lesson.title}</h2>
+          <p>{lesson.note}</p>
+
+          <div
+            class="player"
+            data-player
+            data-lesson-id={lesson.id}
+            data-title={lesson.title}
+            data-duration-label={lesson.duration}
+          >
+            <audio controls preload="metadata" playsinline src={lesson.src} />
+            <div class="player-transport">
+              <button type="button" class="secondary" data-action="back">Back 15 seconds</button>
+              <button type="button" data-action="play">Play</button>
+              <button type="button" class="secondary" data-action="forward">Forward 15 seconds</button>
+            </div>
+            <label class="seek-label">
+              Seek
+              <input class="seek" data-seek type="range" min="0" max="1000" value="0" step="1" />
+            </label>
+            <div class="player-meta">
+              <p class="player-times">
+                <span data-current>0:00</span>
+                <span aria-hidden="true">/</span>
+                <span data-duration>{lesson.duration}</span>
+              </p>
+              <label>
+                Speed
+                <select data-speed>
+                  <option value="0.75">0.75×</option>
+                  <option value="1" selected>1×</option>
+                  <option value="1.25">1.25×</option>
+                  <option value="1.5">1.5×</option>
+                </select>
+              </label>
+            </div>
+            <p class="player-status" data-status aria-live="polite" />
+          </div>
+
+          <p class="inline-actions">
+            <a class="button secondary" href={lesson.src} download={lesson.file}>
+              Download audio
+            </a>
+          </p>
+
+          <h3>Vocabulary in this lesson</h3>
+          {
+            lesson.vocabulary.map((group) => (
+              <div class="vocab-group">
+                <h4>{group.group}</h4>
+                <ul class="word-list">
+                  {group.items.map((item) => (
+                    <li lang="id">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
+
+          {lesson.html && (
+            <details class="transcript">
+              <summary>Transcript</summary>
+              <div class="transcript-body" set:html={lesson.html} />
+            </details>
+          )}
+        </section>
+      ))
+    }
+  </article>
+</Base>
+
+<script>
+  const STORAGE_KEY = 'belajar-indonesia.audio-position.v1';
+
+  function loadPositions() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      return stored && typeof stored === 'object' ? stored : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function savePositions(positions) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(positions));
+  }
+
+  function formatTime(seconds, round = false) {
+    const total = Math.max(0, round ? Math.round(seconds || 0) : Math.floor(seconds || 0));
+    const secs = total % 60;
+    const mins = Math.floor(total / 60) % 60;
+    const hours = Math.floor(total / 3600);
+    if (hours > 0) return `${hours}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    return `${mins}:${String(secs).padStart(2, '0')}`;
+  }
+
+  function spokenTime(seconds) {
+    const total = Math.max(0, Math.floor(seconds || 0));
+    const secs = total % 60;
+    const mins = Math.floor(total / 60) % 60;
+    const hours = Math.floor(total / 3600);
+    const parts = [];
+    if (hours) parts.push(`${hours} ${hours === 1 ? 'hour' : 'hours'}`);
+    if (mins) parts.push(`${mins} ${mins === 1 ? 'minute' : 'minutes'}`);
+    parts.push(`${secs} ${secs === 1 ? 'second' : 'seconds'}`);
+    return parts.join(' ');
+  }
+
+  const positions = loadPositions();
+  let active = null;
+
+  function setup(root) {
+    root.classList.add('is-enhanced');
+    const audio = root.querySelector('audio');
+    const playButton = root.querySelector('[data-action="play"]');
+    const backButton = root.querySelector('[data-action="back"]');
+    const forwardButton = root.querySelector('[data-action="forward"]');
+    const seek = root.querySelector('[data-seek]');
+    const speed = root.querySelector('[data-speed]');
+    const current = root.querySelector('[data-current]');
+    const duration = root.querySelector('[data-duration]');
+    const status = root.querySelector('[data-status]');
+    const id = root.dataset.lessonId;
+    const title = root.dataset.title;
+    let dragging = false;
+    let lastSaved = 0;
+
+    function remembered() {
+      const value = Number(positions[id]);
+      return Number.isFinite(value) && value > 2 ? value : 0;
+    }
+
+    function persist(force = false) {
+      if (!Number.isFinite(audio.currentTime) || audio.currentTime < 1) return;
+      const now = Date.now();
+      if (!force && now - lastSaved < 2000) return;
+      lastSaved = now;
+      const nearEnd = Number.isFinite(audio.duration) && audio.duration - audio.currentTime < 5;
+      if (nearEnd) delete positions[id];
+      else positions[id] = Math.floor(audio.currentTime);
+      savePositions(positions);
+    }
+
+    function paint() {
+      const length = Number.isFinite(audio.duration) ? audio.duration : 0;
+      current.textContent = formatTime(audio.currentTime);
+      if (length) duration.textContent = formatTime(length, true);
+      if (!dragging && length) seek.value = String(Math.round((audio.currentTime / length) * 1000));
+      const label = `Seek, ${spokenTime(audio.currentTime)} of ${spokenTime(length || 0)}`;
+      seek.setAttribute('aria-valuetext', label);
+      updateSession();
+    }
+
+    function setPlaying(playing) {
+      playButton.textContent = playing ? 'Pause' : 'Play';
+      playButton.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+    }
+
+    function skip(delta) {
+      const length = Number.isFinite(audio.duration) ? audio.duration : audio.currentTime + Math.max(delta, 0);
+      audio.currentTime = Math.min(length, Math.max(0, audio.currentTime + delta));
+      persist(true);
+      paint();
+      status.textContent = `${delta < 0 ? 'Back' : 'Forward'} 15 seconds, now at ${spokenTime(audio.currentTime)}.`;
+    }
+
+    function updateSession() {
+      if (active !== root || !('mediaSession' in navigator)) return;
+      try {
+        if (Number.isFinite(audio.duration)) {
+          navigator.mediaSession.setPositionState({
+            duration: audio.duration,
+            playbackRate: audio.playbackRate || 1,
+            position: Math.min(audio.currentTime, audio.duration),
+          });
+        }
+      } catch {
+        /* Some browsers reject the position state until metadata is ready. */
+      }
+    }
+
+    function claimSession() {
+      active = root;
+      if (!('mediaSession' in navigator)) return;
+      const artworkSrc = document.querySelector('link[rel="icon"]')?.href;
+      try {
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title,
+          artist: 'Belajar Indonesia',
+          album: 'Audio lessons',
+          artwork: artworkSrc ? [{ src: artworkSrc, sizes: 'any', type: 'image/svg+xml' }] : [],
+        });
+      } catch {
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title,
+          artist: 'Belajar Indonesia',
+          album: 'Audio lessons',
+        });
+      }
+      const actions = {
+        play: () => audio.play(),
+        pause: () => audio.pause(),
+        seekbackward: (details) => skip(-(details.seekOffset || 15)),
+        seekforward: (details) => skip(details.seekOffset || 15),
+        seekto: (details) => {
+          if (details.seekTime != null) audio.currentTime = details.seekTime;
+          persist(true);
+          paint();
+        },
+      };
+      for (const [name, handler] of Object.entries(actions)) {
+        try {
+          navigator.mediaSession.setActionHandler(name, handler);
+        } catch {
+          /* This action is not supported here. */
+        }
+      }
+      updateSession();
+    }
+
+    playButton.addEventListener('click', async () => {
+      if (audio.paused) {
+        document.querySelectorAll('audio').forEach((other) => {
+          if (other !== audio) other.pause();
+        });
+        claimSession();
+        try {
+          await audio.play();
+          status.textContent = `Playing. ${spokenTime(audio.currentTime)}.`;
+        } catch {
+          status.textContent = 'The audio could not be played in this browser.';
+        }
+      } else {
+        audio.pause();
+        status.textContent = `Paused at ${spokenTime(audio.currentTime)}.`;
+      }
+    });
+
+    backButton.addEventListener('click', () => skip(-15));
+    forwardButton.addEventListener('click', () => skip(15));
+    speed.addEventListener('change', () => {
+      audio.playbackRate = Number(speed.value);
+      updateSession();
+      status.textContent = `Speed ${speed.value} times.`;
+    });
+
+    seek.addEventListener('pointerdown', () => {
+      dragging = true;
+    });
+    seek.addEventListener('pointerup', () => {
+      dragging = false;
+    });
+    seek.addEventListener('input', () => {
+      const length = Number.isFinite(audio.duration) ? audio.duration : 0;
+      if (!length) return;
+      audio.currentTime = (Number(seek.value) / 1000) * length;
+      current.textContent = formatTime(audio.currentTime);
+      persist(true);
+    });
+
+    audio.addEventListener('play', () => {
+      claimSession();
+      setPlaying(true);
+      if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
+    });
+    audio.addEventListener('pause', () => {
+      setPlaying(false);
+      persist(true);
+      if (active === root && 'mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
+    });
+    audio.addEventListener('timeupdate', () => {
+      paint();
+      persist(false);
+    });
+    audio.addEventListener('loadedmetadata', () => {
+      const resume = remembered();
+      if (resume && resume < audio.duration - 5) {
+        audio.currentTime = resume;
+        status.textContent = `Continuing from ${spokenTime(resume)}.`;
+      }
+      paint();
+    });
+    audio.addEventListener('ended', () => {
+      delete positions[id];
+      savePositions(positions);
+      setPlaying(false);
+      status.textContent = 'End of the lesson.';
+    });
+    audio.addEventListener('error', () => {
+      status.textContent = 'The audio file could not be loaded.';
+    });
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') persist(true);
+    });
+    window.addEventListener('pagehide', () => persist(true));
+    paint();
+  }
+
+  document.querySelectorAll('[data-player]').forEach(setup);
+</script>

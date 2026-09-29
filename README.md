@@ -9,6 +9,7 @@ The site is built with [Astro](https://astro.build) and is set up for GitHub Pag
 - Home: course aims, assumptions, level targets, methods and the weekly rhythm
 - One page for each term, including that term’s vocabulary
 - Vocabulary: instant search across Indonesian and English, with filters for term, theme and register
+- Audio lessons: a player for each lesson, with the place in the recording saved in `localStorage`
 - Flashcards: term and theme, flip, Indonesian-to-English or English-to-Indonesian, shuffle, and known or unknown marks saved in `localStorage`
 - Assessment, resources and appendices
 - [Original course plan (PDF)](public/Two-Year-Indonesian-Plan.pdf)
@@ -34,6 +35,10 @@ npm run extract
 ```
 
 Do not edit the JSON by hand. Each vocabulary object keeps the original Indonesian headword and English gloss, plus `theme`, `root`, a colloquial flag, any colloquial variant, and the standard form where the plan gives one with `→`.
+
+## Adding an audio lesson
+
+Put the mp3 in `public/audio/` and add one object to `src/data/lessons.json` (`id`, `title`, `term`, `file`, `duration`, and the vocabulary groups). If the lesson has a script, save the markdown in `src/data/transcripts/` and set `transcript` to that file name. The audio page lists every entry.
 
 ## GitHub Pages
 

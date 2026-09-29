@@ -1,0 +1,67 @@
+[
+  {
+    "id": "lesson-01",
+    "title": "Term 1 - Lesson 01: Greetings, Introductions and Family",
+    "term": 1,
+    "badge": "Trial lesson",
+    "duration": "32:28",
+    "durationSeconds": 1948,
+    "file": "lesson-01.mp3",
+    "note": "The voices in this lesson are computer-generated.",
+    "transcript": "lesson-01.md",
+    "vocabulary": [
+      {
+        "group": "Greetings",
+        "items": [
+          "selamat pagi",
+          "selamat siang",
+          "selamat sore",
+          "selamat malam",
+          "apa kabar?",
+          "kabar baik",
+          "terima kasih",
+          "sama-sama",
+          "permisi",
+          "maaf",
+          "sampai jumpa",
+          "hati-hati"
+        ]
+      },
+      {
+        "group": "Introductions",
+        "items": [
+          "saya",
+          "aku",
+          "kamu",
+          "Anda",
+          "namaku",
+          "berasal dari",
+          "tinggal",
+          "umur",
+          "kita",
+          "Bapak/Pak",
+          "Ibu/Bu"
+        ]
+      },
+      {
+        "group": "Family",
+        "items": [
+          "keluarga",
+          "orang tua",
+          "ayah",
+          "ibu",
+          "kakak",
+          "adik",
+          "anak tunggal",
+          "punya",
+          "kakek",
+          "nenek"
+        ]
+      },
+      {
+        "group": "Classroom",
+        "items": ["tolong ulangi", "pelan-pelan", "saya kurang paham"]
+      }
+    ]
+  }
+]
