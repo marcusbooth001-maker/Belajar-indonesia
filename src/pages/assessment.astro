@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import course from '../data/course.json';
+
+const [heading, ...rest] = course.assessment;
+---
+
+<Base title="Assessment · Belajar Indonesia" current="assessment">
+  <article class="page">
+    <h1>{heading.text}</h1>
+    <Blocks blocks={rest} />
+  </article>
+</Base>

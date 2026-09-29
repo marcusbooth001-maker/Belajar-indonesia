@@ -1,0 +1,104 @@
+---
+import Runs from './Runs.astro';
+import { slugify } from '../lib/slug.js';
+
+const { blocks = [] } = Astro.props;
+
+function paraText(runs) {
+  return runs.map((run) => run.text).join('');
+}
+
+function isBullet(runs) {
+  return paraText(runs).trim().startsWith('•');
+}
+
+function stripBullet(runs) {
+  const copy = runs.map((run) => ({ ...run }));
+  if (copy[0]) copy[0].text = copy[0].text.replace(/^\s*•\s*/, '');
+  return copy;
+}
+---
+
+<div class="prose">
+  {
+    blocks.map((block, index) => {
+      if (block.type === 'h2' || block.type === 'h3' || block.type === 'h4') {
+        const id = slugify(block.text);
+        const Tag = block.type;
+        return <Tag id={id}>{block.text}</Tag>;
+      }
+      if (block.type === 'p') {
+        return (
+          <p>
+            <Runs runs={block.runs} />
+          </p>
+        );
+      }
+      if (block.type === 'ul') {
+        return (
+          <ul>
+            {block.items.map((item) => (
+              <li>
+                <Runs runs={item} />
+              </li>
+            ))}
+          </ul>
+        );
+      }
+      if (block.type === 'table') {
+        const previous = blocks
+          .slice(0, index)
+          .reverse()
+          .find((candidate) => candidate.type === 'h2' || candidate.type === 'h3' || candidate.type === 'h4');
+        const label = previous ? previous.text : 'Details';
+        const labelledBy = previous ? slugify(previous.text) : undefined;
+        const kv = !block.headers && block.rows.every((row) => row.length === 2);
+        return (
+          <div class="table-scroll" tabindex="0" role="region" aria-label={label}>
+            <table class={kv ? 'kv-table' : undefined} aria-labelledby={labelledBy}>
+              {block.headers && (
+                <thead>
+                  <tr>
+                    {block.headers.map((header) => (
+                      <th scope="col">{header}</th>
+                    ))}
+                  </tr>
+                </thead>
+              )}
+              <tbody>
+                {block.rows.map((row) => (
+                  <tr>
+                    {row.map((cell, cellIndex) => {
+                      const Cell = cellIndex === 0 ? 'th' : 'td';
+                      const bullets = cell.length > 0 && cell.every((para) => isBullet(para));
+                      return (
+                        <Cell scope={cellIndex === 0 ? 'row' : undefined}>
+                          {bullets ? (
+                            <ul>
+                              {cell.map((para) => (
+                                <li>
+                                  <Runs runs={stripBullet(para)} />
+                                </li>
+                              ))}
+                            </ul>
+                          ) : (
+                            cell.map((para) => (
+                              <p>
+                                <Runs runs={para} />
+                              </p>
+                            ))
+                          )}
+                        </Cell>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      }
+      return null;
+    })
+  }
+</div>

@@ -1,0 +1,68 @@
+---
+import Base from '../../layouts/Base.astro';
+import Blocks from '../../components/Blocks.astro';
+import VocabTable from '../../components/VocabTable.astro';
+import { siteUrl } from '../../lib/url.js';
+import { slugify } from '../../lib/slug.js';
+import course from '../../data/course.json';
+import vocab from '../../data/vocab.json';
+
+export function getStaticPaths() {
+  return course.terms.map((term) => ({
+    params: { n: String(term.n) },
+    props: { term },
+  }));
+}
+
+const { term } = Astro.props;
+const meta = course.termMeta.find((item) => item.n === term.n);
+const items = vocab.filter((item) => item.term === term.n);
+const themes = [];
+for (const item of items) {
+  let group = themes.find((candidate) => candidate.theme === item.theme);
+  if (!group) {
+    group = { theme: item.theme, items: [] };
+    themes.push(group);
+  }
+  group.items.push(item);
+}
+const title = `${term.title} · Belajar Indonesia`;
+---
+
+<Base title={title} description={meta.cefr} current={`term-${term.n}`}>
+  <article class="page">
+    <p class="kicker">{term.year}</p>
+    <h1>{term.title}</h1>
+    <div class="inline-actions">
+      <a class="button" href={siteUrl(`/flashcards/?term=${term.n}`)}>Practise these flashcards</a>
+      <a class="button secondary" href={siteUrl(`/vocabulary/?term=${term.n}`)}>Search this term</a>
+    </div>
+    <Blocks blocks={term.blocks} />
+
+    <section aria-labelledby="term-vocabulary">
+      <h2 id="term-vocabulary">Vocabulary ({items.length.toLocaleString('en-GB')} items)</h2>
+      <p>
+        Listed below in the themes from the course plan. Colloquial items are marked, with the standard form where the plan gives one.
+      </p>
+      <nav class="theme-jumps" aria-label="Themes in this term">
+        {
+          themes.map((group) => (
+            <a href={`#${slugify(group.theme)}`}>
+              {group.theme} ({group.items.length})
+            </a>
+          ))
+        }
+      </nav>
+      {
+        themes.map((group) => (
+          <section aria-labelledby={slugify(group.theme)}>
+            <h3 id={slugify(group.theme)}>
+              {group.theme} ({group.items.length})
+            </h3>
+            <VocabTable items={group.items} />
+          </section>
+        ))
+      }
+    </section>
+  </article>
+</Base>

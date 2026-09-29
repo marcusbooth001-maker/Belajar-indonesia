@@ -1,0 +1,150 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import VocabTable from '../components/VocabTable.astro';
+import course from '../data/course.json';
+import vocab from '../data/vocab.json';
+
+const intro = course.vocabIntro.slice(1);
+const themes = [];
+const seen = new Set();
+for (const item of vocab) {
+  const key = `${item.term}::${item.theme}`;
+  if (seen.has(key)) continue;
+  seen.add(key);
+  themes.push({ term: item.term, theme: item.theme });
+}
+const total = vocab.length.toLocaleString('en-GB');
+---
+
+<Base title="Vocabulary · Belajar Indonesia" current="vocabulary" description="Search and filter all listed course vocabulary.">
+  <article class="page">
+    <h1>Vocabulary</h1>
+    <Blocks blocks={course.vocabIntro.slice(0, 1).concat(intro)} />
+    <noscript>
+      <p class="noscript">Search and filters need JavaScript. All {total} items are listed in the table below.</p>
+    </noscript>
+    <form id="vocab-filters" role="search">
+      <div class="filters">
+        <label>
+          Search Indonesian or English
+          <input id="vocab-search" type="search" name="q" autocomplete="off" spellcheck="false" placeholder="e.g. makan or family" />
+        </label>
+        <label>
+          Term
+          <select id="vocab-term" name="term">
+            <option value="all">All terms</option>
+            {course.termMeta.map((term) => <option value={term.n}>Term {term.n}</option>)}
+          </select>
+        </label>
+        <label>
+          Theme
+          <select id="vocab-theme" name="theme">
+            <option value="all">All themes</option>
+          </select>
+        </label>
+        <label>
+          Register
+          <select id="vocab-register" name="register">
+            <option value="all">Any register</option>
+            <option value="colloquial">Colloquial only</option>
+            <option value="slang">Slang only</option>
+            <option value="standard">Standard only</option>
+          </select>
+        </label>
+      </div>
+    </form>
+    <p class="result-line" aria-live="polite">
+      <span id="vocab-count">Showing {total} of {total} items</span>
+      <span>{total} listed in the course plan</span>
+    </p>
+    <p id="vocab-empty" class="empty" hidden>No items match these filters.</p>
+    <VocabTable items={vocab} filterable={true} />
+    <script id="theme-index" type="application/json" set:html={JSON.stringify(themes)} />
+  </article>
+
+<script>
+  import { filterVocab } from '../lib/search.js';
+
+  const form = document.querySelector('#vocab-filters');
+  const search = document.querySelector('#vocab-search');
+  const termSelect = document.querySelector('#vocab-term');
+  const themeSelect = document.querySelector('#vocab-theme');
+  const registerSelect = document.querySelector('#vocab-register');
+  const count = document.querySelector('#vocab-count');
+  const empty = document.querySelector('#vocab-empty');
+  const rows = [...document.querySelectorAll('[data-vocab-row]')];
+  const themes = JSON.parse(document.querySelector('#theme-index').textContent);
+  const total = rows.length;
+
+  const items = rows.map((row) => ({
+    row,
+    id: row.dataset.id,
+    term: Number(row.dataset.term),
+    theme: row.dataset.theme,
+    colloquial: row.dataset.colloquial === 'true',
+    slang: row.dataset.slang === 'true',
+    indonesian: row.dataset.indonesian,
+    english: row.dataset.english,
+    root: row.dataset.root || null,
+    standard: row.dataset.standard || null,
+    colloquialVariant: row.dataset.variant || null,
+  }));
+
+  function fillThemes() {
+    const term = termSelect.value;
+    const current = themeSelect.value;
+    const available = themes.filter((theme) => term === 'all' || String(theme.term) === String(term));
+    themeSelect.replaceChildren(new Option('All themes', 'all'));
+    for (const theme of available) {
+      const option = new Option(theme.theme, theme.theme);
+      themeSelect.append(option);
+    }
+    themeSelect.value = [...themeSelect.options].some((option) => option.value === current) ? current : 'all';
+  }
+
+  function readParams() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('q')) search.value = params.get('q');
+    if (params.get('term')) termSelect.value = params.get('term');
+    fillThemes();
+    if (params.get('theme')) themeSelect.value = params.get('theme');
+    if (![...themeSelect.options].some((option) => option.value === themeSelect.value)) themeSelect.value = 'all';
+    if (params.get('register')) registerSelect.value = params.get('register');
+  }
+
+  function apply() {
+    const filtered = new Set(
+      filterVocab(items, {
+        query: search.value,
+        term: termSelect.value,
+        theme: themeSelect.value,
+        register: registerSelect.value,
+      }).map((item) => item.id),
+    );
+    for (const item of items) item.row.hidden = !filtered.has(item.id);
+    const shown = filtered.size;
+    count.textContent = `Showing ${shown.toLocaleString('en-GB')} of ${total.toLocaleString('en-GB')} items`;
+    empty.hidden = shown !== 0;
+    const params = new URLSearchParams();
+    if (search.value.trim()) params.set('q', search.value.trim());
+    if (termSelect.value !== 'all') params.set('term', termSelect.value);
+    if (themeSelect.value !== 'all') params.set('theme', themeSelect.value);
+    if (registerSelect.value !== 'all') params.set('register', registerSelect.value);
+    const query = params.toString();
+    const next = `${window.location.pathname}${query ? `?${query}` : ''}`;
+    window.history.replaceState(null, '', next);
+  }
+
+  form.addEventListener('submit', (event) => event.preventDefault());
+  search.addEventListener('input', apply);
+  termSelect.addEventListener('change', () => {
+    fillThemes();
+    apply();
+  });
+  themeSelect.addEventListener('change', apply);
+  registerSelect.addEventListener('change', apply);
+  readParams();
+  apply();
+</script>
+</Base>

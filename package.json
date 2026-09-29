@@ -1,0 +1,18 @@
+{
+  "name": "belajar-indonesia",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "python3 scripts/extract_course.py",
+    "test": "node scripts/check-vocab.mjs",
+    "dev": "astro dev --host",
+    "prebuild": "node scripts/check-vocab.mjs",
+    "build": "astro build",
+    "preview": "astro preview --host"
+  },
+  "dependencies": {
+    "@fontsource/fraunces": "^5.2.8",
+    "@fontsource/source-sans-3": "^5.2.6",
+    "astro": "^5.14.4"
+  }
+}

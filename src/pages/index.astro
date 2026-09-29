@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import { siteUrl } from '../lib/url.js';
+import course from '../data/course.json';
+
+const home = course.home;
+const contentsAt = home.findIndex((block) => block.type === 'h2' && block.text === 'Contents');
+const afterContents = home.findIndex((block, index) => index > contentsAt && (block.type === 'h2' || block.type === 'h3'));
+const hero = home.slice(0, contentsAt);
+const contents = home.slice(contentsAt + 1, afterContents);
+const rest = home.slice(afterContents);
+const facts = hero.find((block) => block.type === 'table');
+const prose = hero.filter((block) => block.type === 'p');
+const [title, subtitle, tagline, dated] = prose;
+
+function textOf(block) {
+  return block.runs.map((run) => run.text).join('');
+}
+
+function cellText(cell) {
+  return cell.map((para) => para.map((run) => run.text).join('')).join(' ');
+}
+
+function contentsHref(text) {
+  if (text.startsWith('1.')) return '#overview';
+  if (text.startsWith('2.')) return '#terms';
+  if (text.startsWith('3.')) return siteUrl('/vocabulary/');
+  if (text.startsWith('4.')) return siteUrl('/assessment/');
+  if (text.startsWith('5.')) return siteUrl('/resources/');
+  if (text.startsWith('Appendix A')) return siteUrl('/appendices/#appendix-a');
+  if (text.startsWith('Appendix B')) return siteUrl('/appendices/#appendix-b');
+  return '#contents';
+}
+
+const years = [...new Set(course.termMeta.map((term) => term.year))];
+const pdf = siteUrl('/Two-Year-Indonesian-Plan.pdf');
+---
+
+<Base title="Belajar Indonesia · Two-year course">
+  <article class="page">
+    <header class="hero">
+      <p class="kicker">{textOf(dated)}</p>
+      <h1>{textOf(title)}</h1>
+      <p class="subtitle" lang="id">{textOf(subtitle)}</p>
+      <p class="lede">{textOf(tagline)}</p>
+      <ul class="facts">
+        {
+          facts.rows.map((row) => (
+            <li>
+              <strong>{cellText(row[0])}</strong>
+              <span>{cellText(row[1])}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="hero-actions">
+        <a class="button" href={pdf}>Download the course plan (PDF)</a>
+        <a class="button secondary" href={siteUrl('/vocabulary/')}>Search {course.vocabTotal.toLocaleString('en-GB')} words</a>
+        <a class="button ghost" href={siteUrl('/flashcards/')}>Practise flashcards</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="contents">
+      <h2 id="contents">Contents</h2>
+      <ul class="contents-list">
+        {
+          contents.map((item) => {
+            const text = textOf(item);
+            return (
+              <li>
+                <a href={contentsHref(text)}>{text}</a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </section>
+
+    <Blocks blocks={rest} />
+
+    <section class="term-groups" aria-labelledby="term-cards">
+      <h2 id="term-cards">Open a term</h2>
+      {
+        years.map((year) => (
+          <div>
+            <h3>{year}</h3>
+            <div class="term-grid">
+              {course.termMeta
+                .filter((term) => term.year === year)
+                .map((term) => (
+                  <a class="term-card" href={siteUrl(`/term/${term.n}/`)}>
+                    <p class="eyebrow">Term {term.n}</p>
+                    <h3>{term.title}</h3>
+                    <p>{term.cefr}</p>
+                    <p class="count">{term.count.toLocaleString('en-GB')} words</p>
+                  </a>
+                ))}
+            </div>
+          </div>
+        ))
+      }
+    </section>
+  </article>
+</Base>
