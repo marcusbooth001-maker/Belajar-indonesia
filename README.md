@@ -6,7 +6,7 @@ The site is built with [Astro](https://astro.build) and is set up for GitHub Pag
 
 ## Pages
 
-- Home: course aims, assumptions, level targets, methods and the weekly rhythm
+- Course: aims, assumptions, level targets, methods and the weekly rhythm. The navigation also has a Home link to the portal hub at <https://itsmyship.com>, which is outside this site’s base path.
 - One page for each term, including that term’s vocabulary
 - Vocabulary: instant search across Indonesian and English, with filters for term, theme and register
 - Audio lessons: a player for each lesson, with the place in the recording saved in `localStorage`

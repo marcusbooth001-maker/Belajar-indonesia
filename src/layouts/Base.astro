@@ -1,7 +1,4 @@
 ---
-import '@fontsource/fraunces/latin-500.css';
-import '@fontsource/fraunces/latin-600.css';
-import '@fontsource/fraunces/latin-600-italic.css';
 import '@fontsource/source-sans-3/latin-400.css';
 import '@fontsource/source-sans-3/latin-600.css';
 import '@fontsource/source-sans-3/latin-700.css';
@@ -27,7 +24,7 @@ function isCurrent(href) {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href={siteUrl('/favicon.svg')} type="image/svg+xml" />
-    <meta name="theme-color" content="#16343f" />
+    <meta name="theme-color" content="#303030" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -39,7 +36,8 @@ function isCurrent(href) {
         </a>
         <nav aria-label="Primary">
           <div class="nav-links">
-            <a href={siteUrl('/')} aria-current={isCurrent('/') ? 'page' : undefined}>Home</a>
+            <a class="nav-home" href="https://itsmyship.com">Home</a>
+            <a href={siteUrl('/')} aria-current={isCurrent('/') ? 'page' : undefined}>Course</a>
             <a href={siteUrl('/vocabulary/')} aria-current={current === 'vocabulary' ? 'page' : undefined}>Vocabulary</a>
             <a href={siteUrl('/audio/')} aria-current={current === 'audio' ? 'page' : undefined}>Audio</a>
             <a href={siteUrl('/flashcards/')} aria-current={current === 'flashcards' ? 'page' : undefined}>Flashcards</a>
