@@ -1,0 +1,47 @@
+/* itsmyship.com SHARED NAVIGATION v1 (12 Oct 2026) - source of truth: /workspace/portal-hub/shared/nav.css
+   Copy this file unchanged into each static site (e.g. assets/nav.css) and load it BEFORE the site's own CSS.
+   Matches the desk's Streamlit sidebar (/workspace/portal/lib/theme.py) and the money site's sidebar, which was
+   already built to it. Markup: shared/nav.html. Rules: STYLE.md "Shared navigation".
+   RULE: links never open a new tab (no target="_blank", no window.open).
+   Do not edit per site; change it here and re-copy. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#0b0f17;--card:#121826;--panel:#141b29;--line:#1f2a3d;--fg:#e6e9ef;--hi:#f3f5f9;--body:#cfd5e2;--muted:#8b93a7;
+--gold:#d9b45b;--teal:#3ecfb2;--blue:#5b9cf5;--red:#f06a6a;--purple:#a78bfa;--orange:#f59e5b;--side:#0d1320;--navw:300px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--fg);font:16px/1.5 'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+background:radial-gradient(1200px 600px at 10% -10%,#141d30 0%,var(--bg) 55%) fixed var(--bg)}
+/* ---- sidebar ---- */
+.sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--navw);background:var(--side);border-right:1px solid var(--line);
+overflow-y:auto;padding:18px 16px 24px;z-index:20;font-family:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.sidebar a{text-decoration:none}
+.nav-logo{display:block;padding:2px 6px 14px}.nav-logo .logo,.nav-logo img{height:40px;width:auto;max-width:230px;display:block}
+.ic{width:20px;height:20px;flex:0 0 20px;fill:currentColor}
+.nav-home,.nav-btn{display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid #2a3550;border-radius:8px;
+padding:8px 12px;color:var(--fg);font-weight:500;font-size:.95rem;line-height:1.4;background:var(--card);margin:0 0 6px}
+.nav-home:hover,.nav-btn:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
+.nav-sec{color:var(--muted);font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin:18px 8px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:7px 10px;margin:2px 0;border-radius:8px;color:#c6ccd8;font-size:.92rem;line-height:1.3}
+.nav-item .ic{fill:var(--muted);width:18px;height:18px;flex-basis:18px}
+.nav-item:hover{background:#172033;color:var(--hi);text-decoration:none}
+.nav-item.on,.nav-item[aria-current="page"]{background:#262f45;color:var(--hi);font-weight:600}
+.nav-item.on .ic,.nav-item[aria-current="page"] .ic{fill:var(--hi)}
+.sidebar hr{border:0;border-top:1px solid var(--line);margin:18px 4px}
+.nav-note{color:var(--muted);font-size:.83rem;margin:0 6px 10px;line-height:1.45}.nav-note b{color:#d7dcea}
+/* ---- content column ---- */
+.content{margin-left:var(--navw);min-height:100vh}
+/* ---- mobile (<=900px): sticky bar with burger, sidebar slides in, CSS-only (checkbox) ---- */
+.nav-toggle{position:absolute;opacity:0;pointer-events:none}
+.mobilebar,.scrim{display:none}
+@media (max-width:900px){
+ .content{margin-left:0}
+ .mobilebar{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:15;background:rgba(13,19,32,.95);
+  border-bottom:1px solid var(--line);padding:8px 12px}
+ .burger{display:grid;place-items:center;width:38px;height:38px;border:1px solid #2a3550;border-radius:8px;color:var(--fg);cursor:pointer}
+ .burger .ic{width:22px;height:22px}
+ .mb-title{font-weight:700;color:var(--hi);flex:1;text-decoration:none}.mb-title .dia{color:var(--gold)}
+ .sidebar{transform:translateX(-100%);transition:transform .2s ease;box-shadow:none;width:min(290px,86vw)}
+ .nav-toggle:checked ~ .sidebar{transform:none;box-shadow:0 0 40px rgba(0,0,0,.6)}
+ .nav-toggle:checked ~ .scrim{display:block;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:18}
+ .nav-toggle:focus-visible ~ .mobilebar .burger{outline:2px solid var(--gold)}
+}
