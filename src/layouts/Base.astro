@@ -1,7 +1,9 @@
 ---
-import '@fontsource/source-sans-3/latin-400.css';
-import '@fontsource/source-sans-3/latin-600.css';
-import '@fontsource/source-sans-3/latin-700.css';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-700.css';
+import '../styles/nav.css';
 import '../styles/global.css';
 import { siteUrl } from '../lib/url.js';
 import course from '../data/course.json';
@@ -10,9 +12,49 @@ const { title, description = course.tagline, current = '' } = Astro.props;
 const pdf = siteUrl('/Two-Year-Indonesian-Plan.pdf');
 const path = Astro.url.pathname;
 
+const icons = {
+  course: 'M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z',
+  vocabulary:
+    'M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z',
+  audio:
+    'M12 3a9 9 0 0 0-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7a9 9 0 0 0-9-9z',
+  flashcards:
+    'M2.53 19.65l1.34.56v-9.03l-2.43 5.86c-.41 1.02.08 2.19 1.09 2.61zm19.5-3.7L17.07 3.98a2.1 2.1 0 0 0-1.81-1.23c-.26 0-.53.04-.79.15L7.1 5.95c-.75.31-1.21 1.03-1.23 1.8-.01.27.04.54.15.8l4.96 11.97c.31.76 1.05 1.22 1.83 1.23.26 0 .52-.05.77-.15l7.36-3.05c1.02-.42 1.51-1.59 1.09-2.6zM7.88 8.75c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-2 11c0 1.1.9 2 2 2h1.45l-3.45-8.34v6.34z',
+  assessment:
+    'M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z',
+  term: 'M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z',
+  resources:
+    'M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z',
+  appendices:
+    'M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z',
+};
+
+const courseLinks = [
+  { href: '/', label: 'Course', icon: icons.course },
+  { href: '/vocabulary/', label: 'Vocabulary', icon: icons.vocabulary },
+  { href: '/audio/', label: 'Audio', icon: icons.audio },
+  { href: '/flashcards/', label: 'Flashcards', icon: icons.flashcards },
+  { href: '/assessment/', label: 'Assessment', icon: icons.assessment },
+];
+
+const moreLinks = [
+  { href: '/resources/', label: 'Resources', icon: icons.resources },
+  { href: '/appendices/', label: 'Appendices', icon: icons.appendices },
+];
+
 function isCurrent(href) {
   const target = siteUrl(href);
-  return path === target || path === target.replace(/\/$/, '');
+  if (path === target || path === target.replace(/\/$/, '')) return true;
+  if (current.startsWith('term-') && href === `/term/${current.slice(5)}/`) return true;
+  const named = {
+    vocabulary: '/vocabulary/',
+    audio: '/audio/',
+    flashcards: '/flashcards/',
+    assessment: '/assessment/',
+    resources: '/resources/',
+    appendices: '/appendices/',
+  }[current];
+  return named === href;
 }
 ---
 
@@ -24,52 +66,97 @@ function isCurrent(href) {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href={siteUrl('/favicon.svg')} type="image/svg+xml" />
-    <meta name="theme-color" content="#303030" />
+    <meta name="theme-color" content="#0b0f17" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="wordmark" href={siteUrl('/')}>
-          <strong>Belajar Indonesia</strong>
-          <span>Two-year course</span>
-        </a>
-        <nav aria-label="Primary">
-          <div class="nav-links">
-            <a class="nav-home" href="https://itsmyship.com">Home</a>
-            <a href={siteUrl('/')} aria-current={isCurrent('/') ? 'page' : undefined}>Course</a>
-            <a href={siteUrl('/vocabulary/')} aria-current={current === 'vocabulary' ? 'page' : undefined}>Vocabulary</a>
-            <a href={siteUrl('/audio/')} aria-current={current === 'audio' ? 'page' : undefined}>Audio</a>
-            <a href={siteUrl('/flashcards/')} aria-current={current === 'flashcards' ? 'page' : undefined}>Flashcards</a>
-            <a href={siteUrl('/assessment/')} aria-current={current === 'assessment' ? 'page' : undefined}>Assessment</a>
-            <a href={siteUrl('/resources/')} aria-current={current === 'resources' ? 'page' : undefined}>Resources</a>
-            <a href={siteUrl('/appendices/')} aria-current={current === 'appendices' ? 'page' : undefined}>Appendices</a>
-            <details class="terms-menu">
-              <summary>Terms</summary>
-              <div class="term-links">
-                {
-                  course.termMeta.map((term) => (
-                    <a href={siteUrl(`/term/${term.n}/`)}>
-                      Term {term.n}: {term.title}
-                    </a>
-                  ))
-                }
-              </div>
-            </details>
-          </div>
-        </nav>
-      </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" />
+    <header class="mobilebar">
+      <label for="nav-toggle" class="burger" title="Menu">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      </label>
+      <a class="mb-title" href={siteUrl('/')}><span class="dia">◆</span> Belajar Indonesia</a>
     </header>
-    <main id="main">
-      <slot />
-    </main>
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <p>
-          {course.dated}. {course.vocabTotal.toLocaleString('en-GB')} listed words and phrases.
-          <a href={pdf}>Download the course plan (PDF)</a>.
-        </p>
-      </div>
-    </footer>
+    <label for="nav-toggle" class="scrim" aria-hidden="true"></label>
+    <aside class="sidebar">
+      <nav aria-label="Main">
+        <a class="nav-logo" href="https://itsmyship.com" title="itsmyship.com: all portals">
+          <svg class="logo" viewBox="0 0 360 72" role="img" aria-label="Belajar Indonesia">
+            <polygon points="24,8 44,36 24,64 4,36" fill="#d9b45b"></polygon>
+            <polygon points="24,20 35,36 24,52 13,36" fill="#0b0f17"></polygon>
+            <text x="58" y="30" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="4" fill="#d9b45b">BELAJAR</text>
+            <text x="58" y="58" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#f3f5f9">Indonesia</text>
+          </svg>
+        </a>
+        <a class="nav-home" href="https://itsmyship.com" title="itsmyship.com: all portals">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
+          <span>Home</span>
+        </a>
+
+        <div class="nav-sec">Course</div>
+        {
+          courseLinks.map((link) => (
+            <a
+              class:list={['nav-item', { on: isCurrent(link.href) }]}
+              href={siteUrl(link.href)}
+              aria-current={isCurrent(link.href) ? 'page' : undefined}
+            >
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d={link.icon} />
+              </svg>
+              <span>{link.label}</span>
+            </a>
+          ))
+        }
+
+        <div class="nav-sec">Terms</div>
+        {
+          course.termMeta.map((term) => {
+            const href = `/term/${term.n}/`;
+            const on = isCurrent(href);
+            return (
+              <a class:list={['nav-item', { on }]} href={siteUrl(href)} aria-current={on ? 'page' : undefined}>
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d={icons.term} />
+                </svg>
+                <span>Term {term.n}</span>
+              </a>
+            );
+          })
+        }
+
+        <div class="nav-sec">More</div>
+        {
+          moreLinks.map((link) => (
+            <a
+              class:list={['nav-item', { on: isCurrent(link.href) }]}
+              href={siteUrl(link.href)}
+              aria-current={isCurrent(link.href) ? 'page' : undefined}
+            >
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d={link.icon} />
+              </svg>
+              <span>{link.label}</span>
+            </a>
+          ))
+        }
+
+        <hr />
+        <p class="nav-note">Public · no sign-in needed</p>
+      </nav>
+    </aside>
+    <div class="content">
+      <main id="main">
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <p>
+            {course.dated}. {course.vocabTotal.toLocaleString('en-GB')} listed words and phrases.
+            <a href={pdf}>Download the course plan (PDF)</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
