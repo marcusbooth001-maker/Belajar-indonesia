@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import WalkingDownloads from '../../components/WalkingDownloads.astro';
 import { siteUrl } from '../../lib/url.js';
 import { renderTranscript } from '../../lib/transcript.js';
 import lessons from '../../data/lessons.json';
@@ -35,8 +36,9 @@ const prepared = lessons.map((lesson) => ({
       New lessons are added by placing an mp3 in the audio folder and adding one entry to the lesson list.
     </p>
     <noscript>
-      <p class="noscript">The player buttons need JavaScript. You can still use the download link and read the transcript.</p>
+      <p class="noscript">The player buttons need JavaScript. You can still use the download links and read the transcript.</p>
     </noscript>
+    <WalkingDownloads />
 
     {
       prepared.map((lesson) => (

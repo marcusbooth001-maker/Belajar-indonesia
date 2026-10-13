@@ -1,4 +1,6 @@
 ---
+import SpeakerIcon from './SpeakerIcon.astro';
+
 const { items, filterable = false } = Astro.props;
 
 function searchText(item) {
@@ -38,7 +40,18 @@ function searchText(item) {
             data-search={searchText(item)}
           >
             <td lang="id">
-              {item.indonesian}
+              <span class="word-line">
+                <button
+                  type="button"
+                  class="icon-play"
+                  data-play-word
+                  aria-pressed="false"
+                  aria-label={`Play ${item.indonesian}, then English`}
+                >
+                  <SpeakerIcon />
+                </button>
+                <span>{item.indonesian}</span>
+              </span>
               {item.colloquial && !item.colloquialVariant && <span class="badge">Colloquial</span>}
               {item.colloquialVariant && (
                 <span class="badge">Colloquial form: {item.colloquialVariant}</span>
@@ -62,3 +75,70 @@ function searchText(item) {
     </tbody>
   </table>
 </div>
+
+<script>
+  import { wordAudioUrl } from '../lib/audio-url.js';
+  import { createWordPlayer } from '../lib/word-player.js';
+
+  // Term pages render this table once per theme. Bind playback a single time.
+  if (!window.__belajarWordTable) {
+    window.__belajarWordTable = true;
+    const player = createWordPlayer();
+    let currentButton = null;
+
+    function setPressed(button, pressed) {
+      if (!button) return;
+      button.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+      const row = button.closest('tr');
+      const word = row?.dataset.indonesian || 'this word';
+      button.setAttribute('aria-label', pressed ? `Pause ${word}` : `Play ${word}, then English`);
+    }
+
+    document.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-play-word]');
+      if (!button) return;
+      const row = button.closest('tr');
+      const id = row?.dataset.id;
+      if (!id) return;
+      if (currentButton === button && player.active && !player.paused) {
+        player.pause();
+        return;
+      }
+      if (currentButton === button && player.active && player.paused) {
+        setPressed(button, true);
+        player.resume()?.catch(() => setPressed(button, false));
+        return;
+      }
+      if (currentButton && currentButton !== button) setPressed(currentButton, false);
+      currentButton = button;
+      setPressed(button, true);
+      player.play(
+        [
+          {
+            src: wordAudioUrl(id, 'id'),
+            title: row.dataset.indonesian || id,
+            artist: row.dataset.english || 'Belajar Indonesia',
+            album: 'Vocabulary',
+          },
+          {
+            src: wordAudioUrl(id, 'en'),
+            title: row.dataset.english || id,
+            artist: row.dataset.indonesian || 'Belajar Indonesia',
+            album: 'Vocabulary',
+          },
+        ],
+        {
+          onPlayState: (playing) => {
+            if (currentButton === button) setPressed(button, playing);
+          },
+          onEnd: () => {
+            if (currentButton === button) setPressed(button, false);
+          },
+          onError: () => {
+            if (currentButton === button) setPressed(button, false);
+          },
+        },
+      );
+    });
+  }
+</script>

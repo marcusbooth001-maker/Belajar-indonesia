@@ -1,9 +1,8 @@
 import { defineConfig } from 'astro/config';
 
-// GitHub Pages project sites use the repository name, including its capitalisation.
-// Actions passes BASE_PATH from actions/configure-pages (steps.pages.outputs.base_path).
-const site = (process.env.SITE || 'https://marcusbooth001-maker.github.io').replace(/\/$/, '');
-const rawBase = process.env.BASE_PATH ?? '/Belajar-indonesia';
+// SITE and BASE_PATH still override these. The public site is the portal host.
+const site = (process.env.SITE || 'https://belajar.itsmyship.com').replace(/\/$/, '');
+const rawBase = process.env.BASE_PATH ?? '/';
 const base = rawBase === '' || rawBase === '/' ? '/' : `/${String(rawBase).replace(/^\/|\/$/g, '')}`;
 
 export default defineConfig({

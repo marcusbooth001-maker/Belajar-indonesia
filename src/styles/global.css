@@ -759,6 +759,133 @@ input[type='checkbox'] {
   font-size: 0.98rem;
 }
 
+.word-line {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+button.icon-play {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 2.5rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  min-height: 2.5rem;
+  padding: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--line);
+}
+
+button.icon-play .ic {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+button.icon-play:hover,
+button.icon-play[aria-pressed='true'] {
+  background: var(--primary);
+  color: #0b0f17;
+  border-color: var(--primary);
+}
+
+button.with-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+button.with-icon[hidden] {
+  display: none;
+}
+
+button.with-icon .ic {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.audio-status:empty {
+  margin: 0;
+}
+
+.listen-panel,
+.walking {
+  margin-top: 1.5rem;
+}
+
+.listen-panel {
+  padding: 1rem 1.1rem 0.9rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.listen-panel h2,
+.walking h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.35rem;
+  color: var(--hi);
+}
+
+.listen-panel p,
+.walking p {
+  max-width: 70ch;
+}
+
+.listen-actions button {
+  flex: 1 1 6.5rem;
+}
+
+.download-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.download-list a {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.85rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.download-list a:hover {
+  border-color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .study-actions button,
+  .study-nav button,
+  .listen-actions button {
+    flex: 1 1 100%;
+  }
+
+  .study-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .study-nav span {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
