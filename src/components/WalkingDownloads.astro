@@ -1,0 +1,28 @@
+---
+import course from '../data/course.json';
+import { walkingAudioUrl, walkingFileName } from '../lib/audio-url.js';
+
+const terms = [1, 2, 3, 4, 5, 6, 7, 8].map((n) => {
+  const meta = course.termMeta.find((term) => term.n === n);
+  return { n, title: meta?.title || `Term ${n}` };
+});
+---
+
+<section class="walking" aria-labelledby="walking-audio">
+  <h2 id="walking-audio">Walking audio</h2>
+  <p>
+    One file for each term, about 30 minutes. Each word is spoken in Indonesian, then after a pause in English, then in Indonesian again.
+    The voices are computer-generated. Save a file and listen while you walk.
+  </p>
+  <ul class="download-list">
+    {
+      terms.map((term) => (
+        <li>
+          <a href={walkingAudioUrl(term.n)} download={walkingFileName(term.n)}>
+            Download term {term.n}: {term.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
